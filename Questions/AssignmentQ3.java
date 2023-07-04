@@ -1,17 +1,26 @@
+// Write a program to input principal, time, and rate (P, T, R) from the user and find Simple Interest.
+import java.util.Scanner;
+
 public class AssignmentQ3 {
     public static void main(String[] args) {
-        // if (args.length >= 3) {
-        //     float principle = Float.parseFloat(args[0]);
-        //     float time = Float.parseFloat(args[1]);
-        //     float rate = Float.parseFloat(args[2]);
 
-        //     float si = (principle * rate * time) / 100;
+        System.out.print("Enter Principle amount: ");
+        Scanner input = new Scanner(System.in);
+        int p = input.nextInt();
 
-        //     System.out.println("Your Simple Interest at principle of " + args[0] + " and Time/Duration for " + args[1] + " and Rate of Interest for " + args[2] + " is " + si);
-        // } else {
-        //     System.out.println("Please provide Principle, Time, and Rate of Interest as command-line arguments.");
-        // }
+        System.out.print("Enter Time period: ");
+        int t = input.nextInt();
 
+        System.out.print("Enter Rate of Interest: ");
+        float r = input.nextFloat();
+
+         double si =  (p * r * t) / 100;
+
+        System.out.println("Your Simple Interest at " + p + " Principle Amount and, " + t + " Time Period and " + r + " Rate of Interest is: " + si);
+        double total_a = si + p;
+        System.out.println("And Total amount after " + t + " years is: " + total_a);
+        
+        input.close();
         
     }
 }
