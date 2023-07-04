@@ -12,14 +12,23 @@ public class AssignmentQ7 {
         int first = 0;
         int second = 1;
 
-        for(int i = 0; i != num; i++){
-            int temp = i + 1;
-            int series = i + temp;
+        while (true) {
 
-            System.out.println(series);
+            int next = first + second;
 
-            
+            if (next > num) {
+                break;
+            }
+
+            first = second;
+            second = next;
+
+            System.out.println(next);
+
+                    
         }
+
+        input.close();
     }
     
 }
