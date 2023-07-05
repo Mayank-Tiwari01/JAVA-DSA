@@ -1,5 +1,7 @@
 //To find Armstrong Number between two given number.
 
+import java.util.Scanner;
+
 public class AssignmentQ9 {
     public static boolean isArmstrongNumber(int number) {
         int originalNumber = number;
@@ -7,8 +9,8 @@ public class AssignmentQ9 {
         int sum = 0;
 
         while (number != 0) {
-            int digit = number % 10;
-            sum += Math.pow(digit, digits);
+            int temp = number % 10;
+            sum += Math.pow(temp, digits);
             number /= 10;
         }
 
@@ -25,8 +27,12 @@ public class AssignmentQ9 {
     }
 
     public static void main(String[] args) {
-        int start = 100;
-        int end = 1000;
+
+        Scanner input = new Scanner(System.in);
+
+        int start = input.nextInt();
+        int end = input.nextInt();
         findArmstrongNumbers(start, end);
     }
+   
 }
