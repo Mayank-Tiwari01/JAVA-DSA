@@ -13,6 +13,7 @@ public class AssignmentQ6 {
         double dollars =  rupees / 82.5;
 
         String formattedDollars = String.format("%.2f", dollars);
+       
 
         System.out.println("Equivalent amount in dollars: " + formattedDollars);
 
