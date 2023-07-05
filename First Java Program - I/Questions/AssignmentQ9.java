@@ -5,6 +5,8 @@ import java.util.Scanner;
 public class AssignmentQ9 {
     public static boolean isArmstrongNumber(int number) {
         int originalNumber = number;
+
+        //number of digits in a number.
         int digits = String.valueOf(number).length();
         int sum = 0;
 
