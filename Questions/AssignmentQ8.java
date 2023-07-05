@@ -11,15 +11,27 @@ public class AssignmentQ8 {
         String s = new String();
 
         s = input.nextLine();
-        int lenght = s.length();
+        int length = s.length();
 
-        Array a[] = new Array();
+        char[] array = new char[length];
+       
         
 
-        for (int i = 0; i < lenght; i++){
-
+        for (int i = 0; i < length; i++){
+            //  array = s.toCharArray();
+            array[i] = s.charAt(i);
+            
         }
 
-    }
-    
+        char[] reverse;
+        reverse = new char[length];
+
+        for (int i = 0; i < length; i++) {
+        reverse[i] = array[length - 1 - i];
+        }
+
+        for (int )
+
+    }    
+
 }
