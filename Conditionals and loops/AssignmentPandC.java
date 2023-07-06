@@ -8,32 +8,45 @@ public class AssignmentPandC {
         int n = input.nextInt();
         int r = input.nextInt();
 
-        int rfactorial;
+        int n_minus_r = n - r;
 
-        while (n !=0){
-            rfactorial = n(n-1);
+        int nfactorial = 1;
+        int rfactorial = 1;
+        int n_r_factorial = 1;
+
+        for ( int i =1; i <= n; i++){
+            nfactorial *= i;
+            
+        }
+
+        for ( int i =1; i < r; i++){
+            rfactorial *= i;
+             
+
         }
         
+        for ( int i =1; i < n_minus_r; i++){
+             n_r_factorial *= i;
+            
+        }
 
         System.out.println("Select 0 for Permutation and 1 for Combination");
         int choice = input.nextInt();
 
         if(choice == 0){
-            //
+            System.out.println("nPr: "+ nfactorial/n_r_factorial );
         }
 
-        if else( choice == 1){
-            //
+        else if ( choice == 1){
+            System.out.println("nCr: " + nfactorial / (n_r_factorial * rfactorial));
         }
 
         else{
             System.out.println("Please select 0 or 1");
         }
 
+        input.close();
+
     }
 
-    private static int n(int i) {
-        return 0;
-    }
-    
 }
