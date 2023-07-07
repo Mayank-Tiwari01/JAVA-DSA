@@ -7,6 +7,8 @@ public class EvenOdd {
 
         int num = input.nextInt();
         System.out.println(evenOdd(num));
+
+        input.close();
         
     }
     static boolean evenOdd(int num){
