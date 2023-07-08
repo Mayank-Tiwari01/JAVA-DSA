@@ -14,23 +14,13 @@ public class Runningsum {
             arr[i] = input.nextInt();
         }
 
-        int start = 0;
         int end = arr.length;
-        int sum = 0;
-        int[] ans = new int[arr.length]
 
-        System.out.println(arr[0]); 
-
-        for ( int i = 1; i < end ; i++){
-            sum = arr[start] + arr[end - end + i];
-            ans[i] = sum;
-            arr[start] = sum;
+        for ( int i = 1; i < end; i++){
+            arr[i] = arr[i - 1] + arr[i];
         }
 
-        return sum[];
-        
-        
-        input.close();
+        System.out.println(Arrays.toString(arr));
 
 
     }
