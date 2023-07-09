@@ -25,8 +25,8 @@ import java.util.Arrays;
 
 public class Target {
     public static void main(String[] args) {
-        int[] nums = {0, 1, 0};
-        int[] index = {0, 1, 0};
+        int[] nums = {0, 1, 2, 3, 4};
+        int[] index = {0, 1, 2, 2, 1};
         int[] targetArray = new int[nums.length];
         int length = nums.length;
 
@@ -41,7 +41,18 @@ public class Target {
         //     targetArray[index[i]] = nums[i];
         // }
 
-        System.out.println(Arrays.toString(targetArray));
+        int i = 0;
+        int k = 0;
+
+        while (i < length) {
+            for (k = length - 1; k > index[i]; k--)
+                targetArray[k] = targetArray[k - 1];
+            targetArray[index[i]] = nums[i];
+            System.out.println(Arrays.toString(targetArray));
+            i++;
+        }
+
+        
     }
 }
 
