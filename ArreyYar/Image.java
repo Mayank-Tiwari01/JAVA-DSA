@@ -13,7 +13,7 @@ public class Image {
        int length = image.length;
 
        int rev = 0;
-       int[][] revImage = new int[length][];
+       int[][] revImage = new int[length][length];
 
        for (int row = 0; row < length; row++ ){
         for (int col = image[row].length - 1; col >= 0; col--){
@@ -27,11 +27,19 @@ public class Image {
     }
 
     for (int row = 0; row < length; row++ ){
-        for (int col = image[row].length - 1; col >= 0; col--){
-            
+        for (int col = 0; col < image[row].length ; col++){
+            if(revImage[row][col] == 0){
+                revImage[row][col] = 1;
+            }
+            else if(revImage[row][col] == 1){
+               revImage[row][col] = 0;
+            }
         }
     }
 
+    for (int[] row : revImage) {
+        System.out.println(Arrays.toString(row));
+    }
 
 }
 }
