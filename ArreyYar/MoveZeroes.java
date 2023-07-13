@@ -3,6 +3,7 @@ import java.util.Arrays;
 public class MoveZeroes {
     public static void main(String[] args) {
         int[] nums = {0,0,0,0,0,0,1,2,3,34,0,0,0};
+        System.out.println(Arrays.toString(nums));
         int length = nums.length;
         int CountZeroes = 0;
 
