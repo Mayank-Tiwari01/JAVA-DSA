@@ -1,23 +1,27 @@
 package ArreyYar;
 
 public class LongestSubarray {
-    public static void main(String[] args) {
-        int [] a = {1,2,3};
-        int k = 3;
-        int length = a.length;
-        int counter = 0;
-        int i = 0;
-        int j = 1;
-        int sum = 0;
+    // public static void main(String[] args) {
+    //     int [] a = {1,2,3,4,1,2};
+    //     int k = 3;
+    //     int length = a.length;
+    //     int counter = 0;
+    //     int sum = 0;
 
-        while (i < j && j <= length - 1){
-            sum = a[i] + a[j];
-            j++;
-            if (sum >= k){
-                counter++;
-                i++;
-            }
-        }
-        System.out.println(counter);
+    //     for (int i = 0; i < length; i++){
+    //         sum += a[i];
+    //         if (sum == k){
+    //             counter++;
+    //         }
+
+    //         else if (a[i] == k){
+    //             counter++;
+    //         }
+
+    //         else if (sum > k || sum < k){
+                
+    //         }
+    //     }
+    //     System.out.println(counter);
     }
 }
