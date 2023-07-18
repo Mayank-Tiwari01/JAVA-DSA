@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class PlusOne {
     public static void main(String[] args){
-        int[] digits = {9};
+        int[] digits = {9,8,7,6,5,4,3,2,1}; // will fail for 9,8,7,6,5,4,3,2,1,0
         int n = digits.length;
         int num = 0;
 
@@ -55,8 +55,8 @@ public class PlusOne {
         //         int[] newDigits = new int[n + 1];
         //         newDigits[0] = 1;
         //         return newDigits;
-            }
-        }
+        //     }
+        // }
         
     }
 }
