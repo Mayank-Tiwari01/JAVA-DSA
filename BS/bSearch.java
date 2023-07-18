@@ -5,15 +5,15 @@ public class bSearch {
         int[] nums = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18};
         // int [] nums = {18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0};
 
-        int target = 11;
+        int target = 111;
 
         int ans = Result(nums, target);
 
         if(ans == -1){
-            System.out.println("The Desired element is not present in the array");
+            System.out.println("The target element is not present in the array.");
         }
         else{
-            System.out.println(ans);
+            System.out.println("The target element is at " + ans + " index.");
         }
 
         
