@@ -9,4 +9,16 @@ public class FirstandLastPart2 {
     static int[] ans(int[] nums, target){
 
     }
+    static int index(int[] nums, target){
+        int length = nums.length;
+        int start = 0;
+        int end = length - 1;
+
+        while(start <= end){
+            int mid = start + (end - start) / 2;
+            if(nums[mid] < target){
+
+            }
+        }
+    }
 }
