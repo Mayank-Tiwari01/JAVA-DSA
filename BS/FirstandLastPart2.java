@@ -6,4 +6,7 @@ public class FirstandLastPart2 {
         int target = 4;
         
     }
+    static int[] ans(int[] nums, target){
+
+    }
 }
