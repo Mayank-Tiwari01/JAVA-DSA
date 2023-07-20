@@ -2,7 +2,7 @@ package BS;
 
 public class CorrectPalindome {
     public static void main(String[] args) {
-        int x = 123123;
+        int x = 12121;
         if(isPalindrome(x)){
             System.out.println("True");
         }
