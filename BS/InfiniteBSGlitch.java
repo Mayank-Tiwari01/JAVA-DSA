@@ -3,8 +3,9 @@ package BS;
 public class InfiniteBSGlitch {
     public static void main(String[] args){
         //assume that the array is infinite.
-        int[] nums = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20};
-        int target = 12;
+        int[] nums = {3, 5, 7, 9, 10, 90,
+                100, 130, 140, 160, 170};
+        int target = 10;
         int ans = elementRange(nums, target);
         System.out.println("The target element is at " +ans+ " index");
 
