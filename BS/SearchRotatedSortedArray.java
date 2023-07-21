@@ -1,5 +1,6 @@
 package BS;
-
+//this is the worst implementation in the history of programming.
+//but at least you tried. well...
 public class SearchRotatedSortedArray {
     public static void main(String[] args){
         int[] nums = {5,1,3};
