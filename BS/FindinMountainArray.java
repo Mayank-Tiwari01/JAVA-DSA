@@ -1,5 +1,6 @@
 package BS;
-
+//https://leetcode.com/problems/find-in-mountain-array/description/
+//I used an ArrayList so that i could code it in intellij
 import java.util.ArrayList;
 import java.util.Arrays;
 
