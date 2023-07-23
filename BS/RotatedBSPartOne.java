@@ -2,8 +2,8 @@ package BS;
 
 public class RotatedBSPartOne {
     public static void main(String[] args) {
-        int[] nums = {0,1,2,3,4,5,6,7,8,9,10};
-        int target = 10;
+        int[] nums = {2,5,6,0,0,1,2};
+        int target = 3;
         System.out.println(BS(nums, target));
     }
     static int BS(int[] nums, int target){
