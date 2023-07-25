@@ -1,4 +1,5 @@
 package BS;
+
 //https://www.geeksforgeeks.org/find-position-element-sorted-array-infinite-numbers/
 public class InfiniteBSGlitch {
     public static void main(String[] args){
