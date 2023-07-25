@@ -2,7 +2,7 @@ package BS;
 //https://www.geeksforgeeks.org/find-rotation-count-rotated-sorted-array/
 public class FindRotationCountinRotatedSortedarray {
     public static void main(String[] args) {
-        int[] nums = {4,5,6,7,0,1,2};
+        int[] nums = {4,5,6,7,1,2};
         int ans = Count(nums);
         System.out.println(nums[ans + 1]);
     }
