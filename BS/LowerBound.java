@@ -2,8 +2,8 @@ package BS;
 //the brute force solution of this problem would be a simple linear search.
 public class LowerBound {
     public static void main(String[] args){
-        int[] arr = {1,2,2,3};
-        int k = 4;
+        int[] arr = {1,2,2,3,4,5,6,7,8,9,9,9,10,10,11};
+        int k = 23;
         System.out.println(ans(arr,k));
     }
     static int ans(int[] arr, int k){
