@@ -3,8 +3,8 @@ package BS;
 public class UpperBound {
     public static void main(String[] args){
         int[] arr = {1,2,2,3,4,5,6,7,8,9,9,9,10,10,13};
-        int x = 14;
-        System.out.println(ans(arr,k));
+        int x = 5;
+        System.out.println(ans(arr,x));
     }
     static int ans(int[] arr, int x){
         int start = 0;
