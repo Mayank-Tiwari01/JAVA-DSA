@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SingleElementinSortedArray {
     public static void main(String[] args) {
-        int[] nums = {1, 1, 2, 2, 3, 4, 5, 5};
+        int[] nums = {1, 1, 2, 3, 3, 4, 4, 5, 5};
         System.out.println(SingleElement(nums));
     }
     static int SingleElement(int[]nums){
@@ -28,8 +28,9 @@ public class SingleElementinSortedArray {
                 if(nums[mid] == nums[mid + 1] && mid % 2 == 0 || nums[mid] == nums[mid - 1] && (mid - 1) % 2 == 0){
                     start = mid + 1;
                 }
-                if(nums[mid] == nums[mid - 1] && (mid -1) % 2 != 0 || nums[mid] == nums[mid + 1] && (mid + 1) % 2 == 0){
+                else{
                     end = mid - 1;
+                    //if(nums[mid] == nums[mid - 1] && (mid -1) % 2 != 0 || nums[mid] == nums[mid + 1] && (mid + 1) % 2 == 0)
                 }
             }
         }
