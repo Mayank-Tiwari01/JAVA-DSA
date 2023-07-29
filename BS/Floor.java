@@ -3,7 +3,7 @@ package BS;
 public class Floor {
     public static void main(String args[]){
         int[] arr = {2, 5, 8, 11, 14, 17, 20};
-        int target = 1;
+        int target = 5;
 
         int ans = FloorNum(arr,target);
         System.out.println(ans);
