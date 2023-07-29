@@ -34,6 +34,6 @@ public class Floor {
 
         }
         
-        return end;
+        return arr[end];
     }
 }
