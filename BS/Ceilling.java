@@ -3,7 +3,7 @@ package BS;
 public class Ceilling {
     public static void main(String args[]){
         int[] arr = {2, 5, 8, 11, 14, 17, 20};
-        int target = 5;
+        int target = 19;
 
         int ans = CeillingNum(arr,target);
         System.out.println(ans);
@@ -19,6 +19,10 @@ public class Ceilling {
 
         while(start <= end){
             int mid = start + (end - start) / 2;
+
+            if(arr[mid] == target){
+                return arr[mid];
+            }
 
             if(arr[mid] < target){
                 start = mid + 1;
