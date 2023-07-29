@@ -1,9 +1,23 @@
 package BS;
 
+import java.util.Arrays;
+
 public class SingleElementinSortedArray {
     public static void main(String[] args) {
-        int[] nums = {1, 1, 2, 2, 3, 4, 4, 5, 5};
-        System.out.println(SingleElement(nums));
+//        int[] nums = {1, 1, 2, 2, 3, 4, 4, 5, 5};
+//        System.out.println(SingleElement(nums));
+        int[] nums = new int[100000];
+
+        // Fill the array with pairs of elements (0,0), (1,1), (2,2), ..., (99999, 99999)
+        for (int i = 0; i < 100000; i++) {
+            nums[i] = i;
+        }
+
+        // Insert a single element 99999 at a random index (e.g., index 65432)
+        nums[65432] = 99999;
+
+        System.out.println("Array: " + Arrays.toString(nums));
+        System.out.println("Single Element: " + SingleElement(nums));
     }
     static int SingleElement(int[]nums){
         int length = nums.length;
