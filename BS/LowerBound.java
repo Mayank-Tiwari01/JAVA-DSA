@@ -1,5 +1,5 @@
 package BS;
-
+//the brute force solution of this problem would be a simple linear search.
 public class LowerBound {
     public static void main(String[] args){
         int[] arr = {1,2,2,3};
