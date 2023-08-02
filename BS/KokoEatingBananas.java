@@ -40,7 +40,7 @@ public class KokoEatingBananas {
     static int TimeTaken(int[] piles, int mid){
         int sum = 0;
         for(int nums: piles){
-            sum += Math.ceil((double)nums / mid);
+            sum += Math.ceil((double)nums / (double) mid);
         }
         return sum;
     }
