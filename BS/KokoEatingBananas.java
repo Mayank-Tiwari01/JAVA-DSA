@@ -15,15 +15,15 @@ public class KokoEatingBananas {
         int maxi = Integer.MIN_VALUE;;
         int n = v.length;
         //find the maximum:
-        for (int i = 0; i < n; i++) {
-            maxi = Math.max(maxi, v[i]);
+        for (int j : v) {
+            maxi = Math.max(maxi, j);
         }
         return maxi;
     }
 
     static int Solution(int[] piles, int h) {
         int start = 1;
-        int end = piles[piles.length - 1];
+        int end = findMax(piles);
         int sol = -1;
 
         while(start <= end){
