@@ -6,14 +6,19 @@ public class KokoEatingBananas {
     public static void main(String[] args) {
         int[] piles = {30,11,23,4,20};
         int h = 5;
-        // Sorting the piles array
-        Sort(piles);
+
         // Displaying the sorted array
         System.out.println(Solution(piles, h));
     }
 
-    static void Sort(int[] piles) {
-        Arrays.sort(piles);
+    public static int findMax(int[] v) {
+        int maxi = Integer.MIN_VALUE;;
+        int n = v.length;
+        //find the maximum:
+        for (int i = 0; i < n; i++) {
+            maxi = Math.max(maxi, v[i]);
+        }
+        return maxi;
     }
 
     static int Solution(int[] piles, int h) {
