@@ -2,23 +2,24 @@ package BS;
 
 public class ArrangingCoinsBS {
     public static void main(String[] args) {
-        int n = 9;
+        long n = 2147483646;
         System.out.println(NumberOfCompleteStairs(n));
     }
-    static int NumberOfCompleteStairs(int n){
-        int start = 1;
-        int end = n;
-
+    static long NumberOfCompleteStairs(long n){
+        long start = 1;
+        long end = n;
+        long sol = 1;
         while(start <= end){
-            int mid = start + (end - start) / 2;
-            int CoinsReq = (mid * (mid + 1)) / 2;
+            long mid = start + (end - start) / 2;
+            long CoinsReq = (mid * (mid + 1)) / 2;
             if(CoinsReq > n){
                 end = mid - 1;
             }
-            else if(CoinsReq < n){
+            else {
+                sol = mid;
                 start = mid + 1;
             }
         }
-        return end;
+        return sol;
     }
 }
