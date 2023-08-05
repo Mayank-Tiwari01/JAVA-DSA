@@ -26,7 +26,6 @@ public class MinimumNumberOfDaysToMakeBouquets {
         return max;
     }
     static int minDays(int[] bloomDay,int k, int m){
-        int pointer = 0;
         int counter = 0;
         int numberOfBouquet = 0;
         int min = findMin(bloomDay);
@@ -44,7 +43,6 @@ public class MinimumNumberOfDaysToMakeBouquets {
                     counter = 0;
                 }
             }
-
             if(numberOfBouquet == m || numberOfBouquet > m){
                 return min;
             }
