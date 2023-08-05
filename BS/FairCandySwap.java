@@ -1,5 +1,5 @@
 package BS;
-
+// did not understand the logic
 public class FairCandySwap {
     public static void main(String[] args){
         int[] aliceSizes = {1,2};
