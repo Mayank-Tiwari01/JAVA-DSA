@@ -2,8 +2,8 @@ package BS;
 
 public class CapacityToShipPackagesWithinDays {
     public static void main(String[] args) {
-        int[] weights = {3,2,2,4,1,4};
-        int days = 3;
+        int[] weights = {1,2,3,1,1};
+        int days = 4;
         System.out.println(MinWeight(weights, days));
 
     }
@@ -15,17 +15,14 @@ public class CapacityToShipPackagesWithinDays {
         }
         while(start <= end){
             int mid = start + (end - start) / 2;
-            if(NumberOfDays(weights, mid) < days){
+            if(NumberOfDays(weights, mid) <= days){
                 end = mid - 1;
             }
-            else if (NumberOfDays(weights, mid) > days){
+            else {
                 start = mid + 1;
             }
-            else{
-                return mid;
-            }
         }
-        return -1;
+        return start;
     }
     static int NumberOfDays(int[] weight, int mid){
         int counter = 1;
