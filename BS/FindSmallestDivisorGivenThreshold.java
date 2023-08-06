@@ -1,7 +1,5 @@
 package BS;
-
 import java.util.Arrays;
-
 public class FindSmallestDivisorGivenThreshold {
     public static void main(String[] args) {
         int[] nums = {1,2,5,9};
