@@ -8,10 +8,11 @@ public class CapacityToShipPackagesWithinDays {
 
     }
     static int MinWeight(int[] weights, int days){
-        int start = 1;
+        int start = -1;
         int end = 0;
         for(int nums : weights){
-           end += nums;
+            start = Math.max(nums, start);
+            end += nums;
         }
         while(start <= end){
             int mid = start + (end - start) / 2;
