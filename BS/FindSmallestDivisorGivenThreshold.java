@@ -33,3 +33,20 @@ public class FindSmallestDivisorGivenThreshold {
         return sum;
     }
 }
+//class Solution {
+//    public int smallestDivisor(int[] nums, int threshold) {
+//        int low = 1;
+//        int high = 0;
+//        for(int num : nums) high = Math.max(num,high);
+//        while(low <= high) {
+//            int mid = low + (high - low) / 2;
+//            int total = 0;
+//            for(int num : nums) {
+//                total += (num + mid - 1) / mid;
+//            }
+//            if(total > threshold) low = mid + 1;
+//            else high = mid - 1;
+//        }
+//        return low;
+//    }
+//}
