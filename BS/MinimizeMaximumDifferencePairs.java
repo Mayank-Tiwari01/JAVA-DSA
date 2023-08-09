@@ -1,6 +1,9 @@
 package BS;
 import java.util.Arrays;
-
+/*
+an incorrect implementation of the question, the question would be solved
+with greedy + bs, and idk shit about greedy.
+ */
 public class MinimizeMaximumDifferencePairs {
     public static void main (String[] args){
         int[] nums = {1, 2, 2, 4, 4, 8};
