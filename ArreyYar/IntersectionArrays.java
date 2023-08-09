@@ -28,3 +28,32 @@ public class IntersectionArrays {
         return finalAns;
     }
 }
+/*
+more optimised:
+ HashSet<Integer> set1 = new HashSet<>();
+        HashSet<Integer> intersection = new HashSet<>();
+        // Add elements of nums1 to set1
+        for (int num : nums1) {
+            set1.add(num);
+        }
+
+        // Find the intersection of set1 and nums2
+        for (int num : nums2) {
+            if (set1.contains(num)) {
+                intersection.add(num);
+            }
+        }
+
+        // Convert the intersection set to an array
+        int[] finalAns = new int[intersection.size()];
+        int index = 0;
+        for (int num : intersection) {
+            finalAns[index] = num;
+            index++;
+        }
+
+        return finalAns;
+    }
+}
+
+ */
