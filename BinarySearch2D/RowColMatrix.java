@@ -12,8 +12,6 @@ public class RowColMatrix {
     public static void main(String[] args){
         int[][] matrix = {
                 {10,20,30,40,50},
-                {60,70,80,90,100},
-                {110,180,200,400,500},
         };
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the number to be searched: ");
@@ -22,8 +20,13 @@ public class RowColMatrix {
         System.out.println("The number: " +target+ " is at: " +Arrays.toString(ans));
     }
     public static int[] BinarySearchIn2DArray(int[][] matrix, int target){
+        int rows = matrix.length;
+        if (rows == 0) {
+            return new int[] {-1,-1};
+        }
+        int cols = matrix[0].length;
         int row = 0;
-        int col = matrix.length - 1;
+        int col = cols - 1;
 
         while(row < matrix.length && col >= 0){
             if(matrix[row][col] == target){
