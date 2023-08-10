@@ -4,9 +4,10 @@ import java.util.Scanner;
 //time complexity: O(nRows * log maxCols).
 //works for variable length.
 //nice.
+//but again there is a limitation, it only works for strictly increasing matrix.
 public class Flattened2DVariableRowLength {
     public static void main(String[] args) {
-        int[][] sortedMatrix = {
+        int[][] matrix = {
                 {1, 3, 5},
                 {7, 8},
                 {10, 12, 14, 16},
@@ -18,7 +19,7 @@ public class Flattened2DVariableRowLength {
         Scanner input = new Scanner(System.in);
         int target = input.nextInt();
 
-        int[] ans = binarySearch(sortedMatrix, target);
+        int[] ans = binarySearch(matrix, target);
 
         if (ans[0] == -1) {
             System.out.println("Element not present in the 2D array.");
