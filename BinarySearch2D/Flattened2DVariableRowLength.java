@@ -2,13 +2,14 @@ package BinarySearch2D;
 import java.util.Arrays;
 import java.util.Scanner;
 
+//works for variable length.
 public class Flattened2DVariableRowLength {
     public static void main(String[] args) {
         int[][] sortedMatrix = {
                 {1, 3, 5},
                 {7, 8},
                 {10, 12, 14, 16},
-                {18, 19, 20}
+                {18, 19, 20, 2222}
         };
 
         System.out.println("Enter Element you want to search: ");
@@ -32,10 +33,10 @@ public class Flattened2DVariableRowLength {
         while (low <= high) {
             int mid = low + (high - low) / 2;
 
-            if (sortedMatrix[mid].length == 0) {
-                low = mid + 1;
-                continue;
-            }
+//            if (sortedMatrix[mid].length == 0) {
+//                low = mid + 1;
+//                continue;
+//            }
 
             int nCols = sortedMatrix[mid].length;
             int first = sortedMatrix[mid][0];
