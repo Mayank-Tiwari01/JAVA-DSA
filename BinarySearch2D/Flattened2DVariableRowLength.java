@@ -3,6 +3,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 //time complexity: O(nRows * log maxCols).
 //works for variable length.
+//nice.
 public class Flattened2DVariableRowLength {
     public static void main(String[] args) {
         int[][] sortedMatrix = {
