@@ -1,0 +1,14 @@
+hello Mayank from future, this is cringe but i think i had to do it??
+leaving BS here, i mean not gonna practice questions of just this now, gotta get forward
+i did not do hard questions and i also do not think i know BS very well.
+i am leaving bs at 2D arrays, will come back to practice more questions probably
+what to try doing yourself:
+BS on a 2d array which does not have this prop where the last element of the previous row is smaller that the first
+element of the next row. It is just sorted row and col wise. also try doing this with rows being of variable length.
+
+also bs on a 2D array who's rows does not share any relation, it is just that rows are sorted
+eg: {12,13,14,15,16}
+{1,5,7,11};
+gotcha?
+date : 10/8/23
+time : 11:40PM
