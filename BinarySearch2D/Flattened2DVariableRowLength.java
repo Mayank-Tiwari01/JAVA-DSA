@@ -37,14 +37,14 @@ public class Flattened2DVariableRowLength {
                 firstRow = mid + 1;
                 continue;
             }
-            int numOfColsInMidRow = matrix[mid].length;
+            int numOfColsInCurrentRow = matrix[mid].length;
             int colStart = matrix[mid][0];
-            int colEnd = matrix[mid][numOfColsInMidRow - 1];
+            int colEnd = matrix[mid][numOfColsInCurrentRow - 1];
             //checking if the target lies in between the first and last element of the selected row.
             if(colStart <= target && colEnd >= target){
                 //we have found the row in which our target element can possibly exist, apply BS here.
                 int first = 0;
-                int last = numOfColsInMidRow - 1;
+                int last = numOfColsInCurrentRow - 1;
                 while(first <= last){
                     int rowMid = first + (last - first) / 2;
                     if(matrix[mid][rowMid] == target){
