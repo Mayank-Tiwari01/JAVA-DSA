@@ -67,10 +67,10 @@ public class Flattened2DVariableRowLength {
             if the last element of the selected row was greater than the target then our target possibly
             lies in the previous rows.
              */
-            else if(colEnd > target){
+            else if(colStart > target){
                 lastRow = mid - 1;
             }
-            else if(colStart < target){
+            else if(colEnd < target){
                 firstRow = mid + 1;
             }
         }
