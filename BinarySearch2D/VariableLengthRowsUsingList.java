@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class VariableLengthRows {
+public class VariableLengthRowsUsingList {
     public static void main(String[] args) {
         ArrayList<int[]> sortedMatrix = new ArrayList<>();
         sortedMatrix.add(new int[]{1, 2, 3, 4, 5, 6}); // Example row

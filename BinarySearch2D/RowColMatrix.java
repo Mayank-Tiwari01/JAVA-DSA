@@ -1,6 +1,6 @@
 package BinarySearch2D;
 /*
-In this code, the assumption is that the size of rows in the 2D matrix is fixed.
+In this code, the assumption is that the size of cols in the 2D matrix is fixed.
 Each row in the matrix has the same number of columns.
 This assumption is important for the binary search approach used in the BinarySearchIn2DArray
  function to work correctly.

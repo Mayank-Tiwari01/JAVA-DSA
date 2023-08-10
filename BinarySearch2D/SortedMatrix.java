@@ -2,7 +2,7 @@ package BinarySearch2D;
 
 import java.util.Scanner;
 import java.util.Arrays;
-//size of the rows is fixed, wrote this code to understand better.
+//size of the cols is fixed, wrote this code to understand better.
 public class SortedMatrix {
     public static void main(String[] args){
         int[][] sortedMatrix = {
