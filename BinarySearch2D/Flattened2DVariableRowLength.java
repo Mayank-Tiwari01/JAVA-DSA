@@ -1,10 +1,12 @@
 package BinarySearch2D;
 import java.util.Arrays;
 import java.util.Scanner;
-//time complexity: O(nRows * log maxCols).
-//works for variable length.
-//nice.
-//but again there is a limitation, it only works for strictly increasing matrix.
+/*
+time complexity: O(nRows * log maxCols).
+works for variable length.
+nice.
+but again there is a limitation, it only works for strictly increasing matrix.
+*/
 public class Flattened2DVariableRowLength {
     public static void main(String[] args) {
         int[][] matrix = {
