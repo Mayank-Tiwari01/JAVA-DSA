@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class SortColors {
     public static void main(String[] args) {
-        int[] nums = {2,2,2,2,2,1,1,1,1,1,0,0,0,0,0};
+        int[] nums = {2,0,2,1,1,0};
         //Array will only have 0,1 or 2.
         int numOfZero = 0;
         int numOfOne = 0;
