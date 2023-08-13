@@ -1,4 +1,4 @@
-package ArreyYar;
+package ArrayQuestions;
 
 import java.util.Scanner;
 import java.util.Arrays;

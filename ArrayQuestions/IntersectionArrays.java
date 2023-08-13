@@ -1,5 +1,4 @@
-package ArreyYar;
-import java.util.ArrayList;
+package ArrayQuestions;
 import java.util.HashSet;
 import java.util.Arrays;
 

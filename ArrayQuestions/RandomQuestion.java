@@ -1,4 +1,4 @@
-package ArreyYar;
+package ArrayQuestions;
 public class RandomQuestion {
     public static void main(String[] args) {
         System.out.println("the font is too small goddammit");

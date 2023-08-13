@@ -1,4 +1,4 @@
-package ArreyYar;
+package ArrayQuestions;
 
 public class LongestSubarray {
     // public static void main(String[] args) {

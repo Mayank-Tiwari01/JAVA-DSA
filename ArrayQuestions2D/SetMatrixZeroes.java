@@ -1,6 +1,5 @@
-package twoDarrayQuestions;
+package ArrayQuestions2D;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class SetMatrixZeroes {

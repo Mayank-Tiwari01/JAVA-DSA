@@ -1,4 +1,4 @@
-package ArreyYar;
+package ArrayQuestions;
 
 public class oneToThousand {
     public static void main(String[] args) {

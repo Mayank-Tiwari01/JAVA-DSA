@@ -1,4 +1,4 @@
-package ArreyYar;
+package ArrayQuestions;
 import java.util.Arrays;
 public class ReverseArr {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ArreyYar;
+package ArrayQuestions;
 import java.util.Arrays;
 public class Unique {
     public static void main(String[] args) {
