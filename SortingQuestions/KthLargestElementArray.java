@@ -1,7 +1,9 @@
 package SortingQuestions;
 
 import java.util.Arrays;
-// Min-Heap or QuickSelect Algorithm would be better obv.
+/* Min-Heap (priority queue (heap))
+or QuickSelect Algorithm would be better obv.
+ */
 public class KthLargestElementArray {
     public static void main(String[] args) {
         int[] nums = {3,2,1,5,6,4};
