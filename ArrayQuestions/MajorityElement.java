@@ -1,5 +1,6 @@
 package ArrayQuestions;
-
+//for the most optimal solution see:
+//Boyer-Moore Majority Vote Algorithm.
 
 public class MajorityElement {
     public static void main(String[] args) {
@@ -32,3 +33,5 @@ class Solution {
     }
 }
  */
+
+//or hashing
