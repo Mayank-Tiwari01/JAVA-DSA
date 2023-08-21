@@ -3,7 +3,7 @@ package SortingAlgorithims;
 import java.util.Arrays;
 public class InsertionSort {
     public static void main(String[] args) {
-        int[] nums = {21,18,61,31,101,12,10001,0,1,-1};
+        int[] nums = {100, 2, 45, 10, 67, 32, 89, 1, 56, 23, 78, 12, 34, 90, 5, 65, 87, 9, 54, 21, 76};
         System.out.println(Arrays.toString(SelectionSort(nums)));
     }
     static int[] SelectionSort(int[] nums){
