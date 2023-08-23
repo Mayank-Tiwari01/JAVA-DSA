@@ -7,20 +7,9 @@ public class FindAllNumbersDisappearedArray {
     }
     static ArrayList<Integer> missingNums(int[] nums){
         ArrayList<Integer> missingNums = new ArrayList<>();
-        for(int i = 1; i <= nums.length; i++){
-            for(int j = 0; j <= nums.length; i++){
-                if(nums[j] == i){
-                    break;
-                }
-                if(nums[j] != i){
-                    j++;
-                }
-                if(nums[j] != i && j == nums.length - 1){
-                    missingNums.add(i);
-                }
-            }
+       int first = 0;
+       int second = 1;
 
-        }
         return missingNums;
     }
 }
