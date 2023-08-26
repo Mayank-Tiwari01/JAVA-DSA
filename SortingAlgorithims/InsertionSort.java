@@ -7,11 +7,11 @@ public class InsertionSort {
         System.out.println(Arrays.toString(SelectionSort(nums)));
     }
     static int[] SelectionSort(int[] nums){
-        for(int i = 0; i < nums.length - 1; i++){
+        for (int i = 0; i < nums.length - 1; i++) {
             //increases the index by 1
-            for(int j = 1 + i; j > 0; j--){
+            for (int j = 1 + i; j > 0; j--) {
                 //sorts up till that index
-                if(nums[j] < nums[j-1]){
+                if (nums[j] < nums[j-1]) {
                     Swap(nums, j, j-1);
                 }
                 else{
