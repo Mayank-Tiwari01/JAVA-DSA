@@ -6,7 +6,8 @@ Accepted
 Runtime
 0ms
 Beats 100.00% of users with Java
-(pura logic + implementation is my own let's goooo.
+(pura logic + implementation is my own let's goooo.)
+much better and simple written code at the end tho.
  */
 public class MergeSortedArray {
     public static void main(String[] args) {
@@ -74,4 +75,26 @@ The code is well-written and efficient, with a runtime of 0ms, beating 100% of J
 The time complexity of the code is O(m + n), where m and n are the lengths of the input arrays.
 The space complexity is O(m), as a temporary array of length m is used.
 
+ */
+
+/*
+static int[] mergeArray(int[] nums1, int[] nums2, int m, int n) {
+        int i = m - 1; // Index for the last element of nums1
+        int j = n - 1; // Index for the last element of nums2
+        int k = m + n - 1; // Index for the last position of merged array
+
+        while (j >= 0) {
+            if (i >= 0 && nums1[i] > nums2[j]) {
+                nums1[k] = nums1[i];
+                i--;
+            } else {
+                nums1[k] = nums2[j];
+                j--;
+            }
+            k--;
+        }
+
+        return nums1;
+    }
+}
  */
