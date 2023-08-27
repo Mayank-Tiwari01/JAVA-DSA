@@ -26,17 +26,17 @@ public class MaximumLengthPairChain {
     static int[][] sortingArray(int[][] pairs) {
 
         for (int i = 1; i < pairs.length; i++) {
-
             int[] currentRow = pairs[i];
             int j = i - 1;
 
-            while (j >= 0 && (pairs[j][1] > currentRow[1] || (pairs[j][1] == currentRow[1] && pairs[j][0] > currentRow[0]))) {
+            while (j >= 0 && pairs[j][0] > currentRow[0]) {
                 pairs[j + 1] = pairs[j];
                 j--;
             }
-            pairs[j + 1] = currentRow;
 
+            pairs[j + 1] = currentRow;
         }
+
 
         return pairs;
     }
