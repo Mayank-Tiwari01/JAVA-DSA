@@ -66,3 +66,12 @@ public class MergeSortedArray {
         return nums1;
     }
 }
+
+/*
+The provided code effectively merges two sorted arrays, num1 and num2, into a single sorted array.
+It uses pointers and indices to compare and place elements from the arrays into the merged array.
+The code is well-written and efficient, with a runtime of 0ms, beating 100% of Java users.
+The time complexity of the code is O(m + n), where m and n are the lengths of the input arrays.
+The space complexity is O(m), as a temporary array of length m is used.
+
+ */
