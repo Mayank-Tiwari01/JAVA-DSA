@@ -29,7 +29,7 @@ public class MergeSortedArray {
         int num2Pointer = 0;//num2 array pointer
         int i = 0; //main array pointer
 
-        while (tempPointer < m || num2Pointer < n) {
+        while (tempPointer < m || num2Pointer < n || i < nums1.length) {
             if(tempPointer >= m) {
                 while ( i < length) {
                     nums1[i] = nums2[num2Pointer];
