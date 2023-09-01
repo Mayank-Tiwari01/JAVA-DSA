@@ -2,7 +2,7 @@ package ArrayQuestions;
 
 public class ThirdMaxOptimal {
     public static void main(String[] args) {
-        int[] nums = {2,2,3,1};
+        int[] nums = {88,88,88,87,6567,4};
         System.out.println(thirdMax(nums));
     }
     static int thirdMax(int[] nums) {
