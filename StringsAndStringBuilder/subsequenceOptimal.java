@@ -1,15 +1,14 @@
 package StringsAndStringBuilder;
 /*
 much better sol by chatgpt.
-return indexTwo == two.length(); was an amazing way to figure out the sol.
-also would work for only when the main string and the subsequence string is pre-defined, i.e the leetcode question will fail.
+just keep in check which string is longer
  */
 public class subsequenceOptimal {
     public static void main(String[] args) {
-        String s1 = "abc";
+        String s1 = "abcdefghijklmnopqrstuvwxyz";
         String s2 = "knuxzs"; // false
         String s3 = "z"; // false;
-        String s4 = "ahbgdc"; //true
+        String s4 = "adrxz"; //true
 
         System.out.println(isSubsequence(s1, s4));
     }
