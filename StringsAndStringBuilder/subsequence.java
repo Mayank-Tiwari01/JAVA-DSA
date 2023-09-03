@@ -7,7 +7,7 @@ public class subsequence {
         String s1 = "abcdefghijklmnopqrstuvwxy";
         String s2 = "knuxzs"; // false
         String s3 = "z"; // false;
-        String s4 = ""; //true
+        String s4 = "betuvz"; //true
 
         System.out.println(isSubsequence(s1, s4));
     }
@@ -35,10 +35,6 @@ public class subsequence {
             }
         }
 
-        if (check >= 0) {
-            return true;
-        }
-
-        return false;
+        return check >= 0;
     }
 }

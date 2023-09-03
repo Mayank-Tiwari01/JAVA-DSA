@@ -3,9 +3,9 @@ package StringsAndStringBuilder;
 public class FirstUniqueCharacterString {
     public static void main(String[] args) {
         String s = "aabcdefgg";
-        System.out.println(repeatingChar(s));
+        System.out.println(uniqueChar(s));
     }
-    static int repeatingChar(String s) {
+    static int uniqueChar(String s) {
         //static char repeatingChar(String s) // if asked for char.
         int[] charArr = new int[26];
 

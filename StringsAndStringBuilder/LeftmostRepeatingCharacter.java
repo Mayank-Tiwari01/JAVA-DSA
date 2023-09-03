@@ -2,7 +2,7 @@ package StringsAndStringBuilder;
 
 public class LeftmostRepeatingCharacter {
     public static void main(String[] args) {
-        String s = "abcdefgg";
+        String s = "abcdefgg"; //g or 6
         System.out.println(repeatingChar(s));
     }
     static int repeatingChar(String s) {
