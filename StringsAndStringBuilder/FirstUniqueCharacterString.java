@@ -21,7 +21,7 @@ public class FirstUniqueCharacterString {
                 //return s.charAt(i); //if asked for char
             }
         }
-        return -1; //return '#' if asked for char.
+        return -1; //return '#' if asked for char. or '$' idk
     }
 }
 
