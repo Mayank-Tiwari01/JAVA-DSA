@@ -2,11 +2,11 @@ package StringsAndStringBuilder;
 
 public class LeftmostRepeatingCharacterOptimal2 {
     public static void main(String[] args) {
-        String s = "aabcdefgg";
+        String s = "geeksforgeeks";
         System.out.println(repeatingChar(s));
     }
-    static int repeatingChar(String s) {
-        int result = -1;
+    static char repeatingChar(String s) {
+        char result = '#';
         boolean[] booleanArr = new boolean[26];
         //s consists of only lowercase English letters.
 
@@ -17,7 +17,7 @@ public class LeftmostRepeatingCharacterOptimal2 {
             }
 
             else {
-                result = index;
+                result = s.charAt(i);
             }
         }
         return result;
