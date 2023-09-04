@@ -1,5 +1,7 @@
 package StringsAndStringBuilder;
-
+/*
+to do this without using auxiliary space, you can reverse every word in the string and the reverse the whole string.
+ */
 public class ReverseWordsInString {
     public static void main(String[] args) {
         String s = "It is a sunny day with sunlight and clouds";
