@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class PatternSearchingBruteForce {
     public static void main(String[] args) {
-        String str = "jklscwscjklasjjkl";
-        String pat = "jkl";
+        String str = "klk";
+        String pat = "k";
         System.out.println(searchPattern(str, pat));
     }
     static ArrayList<Integer> searchPattern (String str, String pat) {
@@ -13,12 +13,14 @@ public class PatternSearchingBruteForce {
         int strPointer = 0;
         int patPointer = 0;
 
-        while (strPointer <= str.length() - 1) {
+        while (strPointer <= str.length() - 1 && patPointer <= pat.length() - 1) {
            if (strPointer <= str.length() - 1 && str.charAt(strPointer) == pat.charAt(patPointer)) {
                strPointer++;
-               patPointer++;
+               if (pat.length() > 1) {
+                   patPointer++;
+               }
            }
-           if (strPointer <= str.length() - 1 && patPointer == pat.length() - 1 && str.charAt(strPointer) == pat.charAt(patPointer)) {
+           if ( patPointer <= pat.length() - 1 && strPointer <= str.length() - 1 && patPointer == pat.length() - 1 && str.charAt(strPointer) == pat.charAt(patPointer)) {
                 patternIndex.add(strPointer - patPointer);
                strPointer++;
                patPointer = 0;
