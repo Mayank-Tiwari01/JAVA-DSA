@@ -1,5 +1,7 @@
 package StringsAndStringBuilder;
 //gfg
+// O((n - m + 1) * m)
+
 import java.util.ArrayList;
 
 public class PatternSearchingBruteForce {

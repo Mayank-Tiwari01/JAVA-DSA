@@ -1,14 +1,14 @@
 package StringsAndStringBuilder;
 /*
+Improved Naive Pattern Searching for Distinct
 this solution beats 100% of users in java in leetcode (only return the first index in that question)
-also searches for patterns that are different from each other i.e str = abccc and pat = cc would find only 2. and not 2, 3.
  */
 import java.util.ArrayList;
 
 public class PatternSearchingBetterMySol {
     public static void main(String[] args) {
-        String str = "abcabcdabcyxabcdabxabcdabcdabcyabcdabcy";
-        String pat = "abcdabcy";
+        String str = "aaaa";
+        String pat = "aa";
         System.out.println(searchPattern(str, pat));
     }
     static ArrayList<Integer> searchPattern (String str, String pat) {
