@@ -6,11 +6,11 @@ public class RemoveOutermostParentheses {
         System.out.println(findingPrimitiveString(s));
     }
 
-    static String findingPrimitiveString(String s) {
+    static String findingPrimitiveString(String S) {
         int count = 0;
         StringBuilder result = new StringBuilder();
 
-        for (char c : s.toCharArray()) {
+        for (char c : S.toCharArray()) {
             if (c == '(') {
                 if (count != 0) {
                     result.append(c);
