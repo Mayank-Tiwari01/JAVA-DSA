@@ -5,8 +5,8 @@ passed 45/90 test cases i think.
  */
 public class MinimumOperationstoReduceXtoZero {
     public static void main(String[] args) {
-        int[] nums = {5,6,7,8,9};
-        int x = 4;//-1
+        int[] nums = {1,2,3,4,5,6,7};
+        int x = 10;
         System.out.println(minOperations(nums, x));
     }
     static int minOperations(int[] nums, int x) {
@@ -25,6 +25,15 @@ public class MinimumOperationstoReduceXtoZero {
                 pointer2--;
                 counter++;
             }
+
+            if (nums[pointer2] > x) {
+                pointer2--;
+            }
+
+            if (nums[pointer1] > x) {
+                pointer1++;
+            }
+
             if (x == 0) {
                 return counter;
             }
