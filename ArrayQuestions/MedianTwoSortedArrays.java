@@ -4,7 +4,7 @@ Runtime
 2ms
 Beats 72.12%of users with Java
  */
-public class MedianofTwoSortedArrays {
+public class MedianTwoSortedArrays {
     public static void main(String[] args) {
         int[] nums1 = {1,2,3,4,5,6,7,8,9,99,981,1111,22222};
         int[] nums2 = {1,2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,22,33,44,55,66,77,88,99,981,1111,22222,888888};
