@@ -46,10 +46,6 @@ public class MedianofTwoSortedArrays {
 }
 /*
 Remove Unnecessary Conditions:
-You have conditions like pointer1 < nums1.length && pointer2 < nums2.length in multiple places.
-Since you know that both arrays are sorted, and you're incrementing the pointers within the loop,
-you don't need to check these conditions repeatedly.
-You can simplify the code by removing these conditions and assuming that both pointers will stay within their respective arrays.
 for (int i = 0; i < mergedArray.length; i++) {
             if (pointer1 < nums1.length && (pointer2 >= nums2.length || nums1[pointer1] <= nums2[pointer2])) {
                 mergedArray[i] = nums1[pointer1];
