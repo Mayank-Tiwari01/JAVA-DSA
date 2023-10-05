@@ -1,8 +1,9 @@
 package ArrayQuestions;
 /*
-if the question says there can be or can not be a majority element
+if the question says there can be or cannot be a majority element,
  then we have to check again if the found majorElement occurs more than
   nums.length / 2 or not. so an extra O(n) step.
+  for the modified approach to the same algo, see majority element II.
  */
 public class BoyerMooreMajorityVoteAlgorithm {
     public static void main(String[] args) {
