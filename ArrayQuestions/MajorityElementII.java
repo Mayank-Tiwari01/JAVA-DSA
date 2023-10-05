@@ -1,7 +1,9 @@
 package ArrayQuestions;
 
 import java.util.ArrayList;
-
+/*
+Modified Moore's voting algorithm for elements appearing more than n/3 times.
+ */
 public class MajorityElementII {
     public static void main(String[] args) {
         int[] nums = {1,1,1,1,1,1,1,1,1,1,1,4,4,4,4,4,4,4,4,4,4,4,4,4,7,4,4,7,7,7,7,7};
