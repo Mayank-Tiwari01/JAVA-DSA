@@ -33,5 +33,6 @@ public class prefixSumArray {
             rangeSum = arr[right] - arr[left - 1];
         }
         System.out.println(rangeSum);
+        input.close();
     }
 }
