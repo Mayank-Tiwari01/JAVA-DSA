@@ -3,4 +3,7 @@ Rabin karp Algorithm's implementation. (understood the logic)
 
 
 what I have to learn:
-hashing, hash table, hash set.
+hashing, hash table, hash set.(done learning HashMap)
+
+what should I practice more:
+2d array questions.
