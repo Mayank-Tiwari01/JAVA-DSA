@@ -1,5 +1,5 @@
 package Hashing;
-import java.util.HashMap;
+import java.util.*;
 public class hashMapImplementation {
     public static void main(String[] arguments) {
         int[] arr = {1,1,2,2,2,3,4,5,5,5,5,6,7,2};
@@ -14,6 +14,7 @@ public class hashMapImplementation {
     }
     static int frequency(int[]arr, int freqNum) {
        HashMap<Integer, Integer> freqMap = new HashMap<>(); //key, value (int, int)
+        //Map<Integer, Integer> freqMap = new TreeMap<>();
 
         for (int i = 0; i < arr.length; i++) {
             freqMap.put(arr[i], freqMap.getOrDefault(arr[i], 0) + 1);
