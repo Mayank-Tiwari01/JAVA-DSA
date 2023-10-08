@@ -14,7 +14,7 @@ public class hashMapImplementation {
     }
     static int frequency(int[]arr, int freqNum) {
        HashMap<Integer, Integer> freqMap = new HashMap<>(); //key, value (int, int)
-        //Map<Integer, Integer> freqMap = new TreeMap<>();
+        //Map<Integer, Integer> freqMap = new TreeMap<>(); // stores value in sorted order.
 
         for (int i = 0; i < arr.length; i++) {
             freqMap.put(arr[i], freqMap.getOrDefault(arr[i], 0) + 1);
