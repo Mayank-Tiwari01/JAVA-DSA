@@ -6,9 +6,9 @@ public class numbersBasic {
        printNums(n);
     }
     static void printNums(int n) {
-        if (n <= 20) {
+        if (n <= 21) {
             System.out.println(n);
-            printNums(n + 1);
+            printNums(n + 2); // all odd numbers till 21
         }
     }
 }
