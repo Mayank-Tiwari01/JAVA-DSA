@@ -13,7 +13,7 @@ public class countElementsOfArray {
         int numOfElements = input.nextInt();
         System.out.println("Enter the elements: ");
 
-        int maxNum = 100000007;
+        int maxNum = 10000007;
         int[] hashArr = new int[maxNum + 1];
         while (numOfElements > 0 ) {
             int index = 0;
