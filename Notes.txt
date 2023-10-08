@@ -1,9 +1,10 @@
-what I left for earlier:
+* what I left for earlier:
 Rabin karp Algorithm's implementation. (understood the logic)
 
 
-what I have to learn:
+* what I have to learn:
 hashing, hash table, hash set.(done learning HashMap)
 
-what should I practice more:
+
+* what should I practice more:
 2d array questions.
