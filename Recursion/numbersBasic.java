@@ -11,5 +11,8 @@ public class numbersBasic {
             printNums(n + 2); // all odd numbers till 21
         }
     }
+    /*
+    example of tail recursion. where there's one single last function call.
+     */
 }
 // mAgiC oF reCuRsIoN vRo
