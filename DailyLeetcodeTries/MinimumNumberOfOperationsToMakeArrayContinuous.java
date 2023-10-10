@@ -1,5 +1,12 @@
 package DailyLeetcodeTries;
-
+/*
+This code makes the array continuous.
+It really does, it changes the whole array and makes it continuous.
+But I wish this is what the question asked.
+The question asked for minimum operations.
+And this is exactly what this code does not do.
+It makes the array continuous but does not do it in min operations.
+ */
 import java.util.HashSet;
 
 public class MinimumNumberOfOperationsToMakeArrayContinuous {

@@ -1,5 +1,6 @@
 package DailyLeetcodeTries;
 import java.util.*;
+// correct copied solution
 public class MinimumNumberOfOperations2 {
     public static void main(String[] args) {
         int[] nums = {100,97,94,91,88,85,82,79,76,73,70,67,64,61,58,55,52,49,46,43};
