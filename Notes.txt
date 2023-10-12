@@ -1,10 +1,8 @@
 * what I left for earlier:
 Rabin karp Algorithm's implementation. (understood the logic)
 
-
-* what I have to learn:
-hashing, hash table, hash set.(done learning HashMap)
-
+* What I have to learn:
+hashing, hash table, hash set. (Done learning HashMap ans HashSet)
 
 * what should I practice more:
-2d array questions.
+2d array questions, binary search questions (especially those which require a modified binary search)
