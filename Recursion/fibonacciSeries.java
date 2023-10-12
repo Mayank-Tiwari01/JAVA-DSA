@@ -2,7 +2,7 @@ package Recursion;
 
 public class fibonacciSeries {
     public static void main(String[] args) {
-        int n = 4;
+        int n = 6;
         System.out.println(nthFibonacciNum(n));
     }
     static int nthFibonacciNum(int n) {
