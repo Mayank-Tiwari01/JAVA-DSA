@@ -1,3 +1,3 @@
 # Java
 Java programs (practice)
-The name is java programs and they are java programs but they are more DSA than JAVA, hope than makes sense somehow?
+The name is Java programs and they are Java programs but they are more DSA than JAVA, I hope that makes sense somehow.
