@@ -2,7 +2,7 @@ package ArrayQuestions;
 import java.util.*;
 public class PascalTriangle {
     public static void main(String[] args) {
-        int numRows = 5;
+        int numRows = 10;
         System.out.println(generate(numRows));
     }
     static List<List<Integer>> generate(int numRows) {
