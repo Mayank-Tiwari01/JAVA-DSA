@@ -1,4 +1,4 @@
-package ArrayQuestions;
+package Mathematics;
 import java.util.*;
 public class pascalII {
     public static void main(String[] args) {
