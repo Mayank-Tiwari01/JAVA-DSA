@@ -3,6 +3,7 @@ Rabin karp Algorithm's implementation. (understood the logic)
 
 * What I have to learn:
 hashing, hash table, hash set. (Done learning HashMap ans HashSet)
+learnt 2's compliment and what it does (but did not completely understand why it works?)
 
 * what should I practice more:
 2d array questions, binary search questions (especially those which require a modified binary search)
