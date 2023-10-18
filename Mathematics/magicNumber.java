@@ -2,7 +2,7 @@ package Mathematics;
 
 public class magicNumber {
     public static void main(String[] args) {
-        int n = 6;
+        int n = 4;
         System.out.println(nThMagicNum(n));
     }
     static long nThMagicNum(int n) {
