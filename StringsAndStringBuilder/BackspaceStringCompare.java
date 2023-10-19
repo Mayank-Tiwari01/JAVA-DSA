@@ -4,6 +4,7 @@ Runtime
 1 ms
 Beats
 86.75% (did it mah self)
+(gpt wrote the code better, please see that.)
  */
 public class BackspaceStringCompare {
     public static void main(String[] args) {
