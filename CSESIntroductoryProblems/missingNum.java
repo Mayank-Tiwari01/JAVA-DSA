@@ -16,7 +16,7 @@ public class missingNum {
         System.out.println(missing(sum, n));
     }
     static long missing(long sum, long n) {
-        long exSum = ((long) n * (n + 1)) / 2;
+        long exSum = (n * (n + 1)) / 2;
         return exSum - sum;
     }
 }
