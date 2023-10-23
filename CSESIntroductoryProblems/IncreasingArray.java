@@ -7,8 +7,8 @@ public class IncreasingArray {
         Scanner input = new Scanner(System.in);
         int length = input.nextInt();
         long[] arr = new long[length];
-        for (int i = 0; i < length; i++) {
-            arr[i] = input.nextLong();
+        for (long i = 0; i < length; i++) {
+            arr[(int) i] = input.nextLong();
         }
         System.out.println(minOperations(length, arr));
     }
@@ -18,15 +18,13 @@ public class IncreasingArray {
         }
         long operations = 0;
         int first = 0;
-        int second = 0;
+        int second = 1;
 
         while (second < length) {
-            if (arr[first] < arr[second]) {
-                long sub = arr[second] - arr[first];
-                arr[first] += sub;
+            if (arr[first] > arr[second]) {
+                long sub = arr[first] - arr[second];
+                arr[second] += sub;
                 operations += sub;
-                first++;
-                second++;
             }
             first++;
             second++;
