@@ -1,8 +1,8 @@
 package Mathematics;
-//only works when all the numbers are appearing twice except one number. the explanation is below.
+//only works when all the numbers are appearing even number of times except one number. the explanation is below.
 public class uniqueNum {
     public static void main(String[] args) {
-        int[] nums = {7,1,2,3,2,3,1,7,44};
+        int[] nums = {1, 1, 1, 2, 2, 2, 4, 4, 4, 8, 8, 8, 9};
         System.out.println(unique(nums));
     }
     static int unique(int[] nums) {
