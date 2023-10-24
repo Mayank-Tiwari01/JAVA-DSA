@@ -2,7 +2,7 @@ package Mathematics;
 import java.util.*;
 public class pascalII {
     public static void main(String[] args) {
-        int rowIndex = 3;
+        int rowIndex = 5;
         System.out.println(getRow(rowIndex ));
     }
     static List<Integer> getRow(int rowIndex) {
