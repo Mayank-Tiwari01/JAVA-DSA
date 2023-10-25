@@ -1,11 +1,10 @@
 package Mathematics;
-
-import java.util.Arrays;
-
 public class FlippingImage {
     public static void main(String[] args) {
         int[][] image = {
-                {1}
+                {1,1,1,0,0,1},
+                {0,0,0,0,1,1},
+                {1,1,1,0,1,0}
         };
         flipImage(image);
         for (int i = 0; i < image.length; i++) {
