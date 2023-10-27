@@ -1,5 +1,9 @@
 package StringsAndStringBuilder;
-
+/*
+Runtime
+17ms
+Beats 66.08%of users with Java
+ */
 public class longestPalindromicSubStringBetter {
     public static void main(String[] args) {
         String s = "abb";
