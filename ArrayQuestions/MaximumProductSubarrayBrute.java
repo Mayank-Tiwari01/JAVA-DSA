@@ -68,12 +68,12 @@ public class MaximumProductSubarrayBrute {
             if (second < arr.length && arr[first] != 0 && arr[second] == 0) {
                 long temp = maxProduct(arr, first, second - 1);
                 maxProduct = Math.max(maxProduct, temp);
-                first = second + 1;
-                second = first;
+                first++
+                second = first + 1;
             }
             if (second < arr.length && arr[first] == 0 && arr[second] != 0 || second < arr.length && arr[first] == 0 && arr[second] == 0) {
-                first++;
-                second = first;
+                first++
+                second = first + 1;
             }
             if (second < arr.length && arr[first] != 0 && arr[second] != 0 && second == arr.length - 1) {
                 long temp = maxProduct(arr, first, second);
