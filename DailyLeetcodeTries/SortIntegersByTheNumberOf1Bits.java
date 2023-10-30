@@ -1,7 +1,11 @@
 package DailyLeetcodeTries;
 
 import java.util.Arrays;
-
+/*
+Runtime
+15ms
+Beats 18.67%of users with Java
+ */
 public class SortIntegersByTheNumberOf1Bits {
     public static void main(String[] args) {
         int[] arr = {7,54,355,343,422,523,136,242,432,11,1,1,1,1,0};
