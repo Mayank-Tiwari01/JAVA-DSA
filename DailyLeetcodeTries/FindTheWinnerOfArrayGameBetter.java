@@ -1,21 +1,18 @@
 package DailyLeetcodeTries;
 /*
-Tried stimulating the whole game, but the complexity is very high O(n * k).
-Time Limit Exceeded
-183 / 185 testcases passed
+this will give TLE as well, not really better.
  */
-public class FindTheWinnerOfArrayGame {
+public class FindTheWinnerOfArrayGameBetter {
     public static void main(String[] args) {
-        int[] arr = {1,11,22,33,44,55,66,77,88,99}; //arr of distinct integers
-        int k = 100000009;
-        if (k >= arr.length) {
-            System.out.println(findLargest(arr));
-        }
-        else {
-            System.out.println(winnerElement(arr, k));
-        }
+        int[] arr = {2,1,3,5,4,6,7}; //arr of distinct integers
+        int k = 2;
+        System.out.println(winnerElement(arr, k));
     }
     static int winnerElement(int[] arr, int k) {
+        int largest = findLargest(arr);
+        if (arr.length <= k) {
+            return largest;
+        }
         int count = 0;
         while (count < k) {
             if (arr[0] < arr[1]) {
@@ -32,6 +29,9 @@ public class FindTheWinnerOfArrayGame {
                 if (count == k) {
                     return arr[0];
                 }
+            }
+            if (arr[0] == largest) {
+                return largest;
             }
         }
         return  - 1;
@@ -60,3 +60,5 @@ public class FindTheWinnerOfArrayGame {
         return max;
     }
 }
+
+
