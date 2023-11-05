@@ -1,5 +1,6 @@
 package DailyLeetcodeTries;
 /*
+Tried stimulating the whole game, but the complexity is very high O(n * k).
 Time Limit Exceeded
 183 / 185 testcases passed
  */
