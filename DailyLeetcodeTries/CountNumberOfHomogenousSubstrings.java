@@ -1,8 +1,12 @@
 package DailyLeetcodeTries;
 /*
 Runtime
-15ms
-Beats 13.20%of users with Java
+13ms
+Beats 17.20%of users with Java
+
+I have pasted the edited version of my code which chatgpt wrote, it is much better and follows the same logic
+9ms
+Beats 80.00%of users with Java
  */
 public class CountNumberOfHomogenousSubstrings {
     public static void main(String[] args) {
@@ -17,7 +21,7 @@ public class CountNumberOfHomogenousSubstrings {
         int secondPointer = 1;
 
         while (secondPointer < length) {
-            if (secondPointer < length && s.charAt(firstPointer) == s.charAt(secondPointer)) {
+            if (s.charAt(firstPointer) == s.charAt(secondPointer)) {
                 secondPointer++;
             }
             if (secondPointer < length && s.charAt(firstPointer) != s.charAt(secondPointer)) {
@@ -33,7 +37,41 @@ public class CountNumberOfHomogenousSubstrings {
         }
         return (int) (ans % mod);
     }
-    static double sumOfNums(double length) {
-        return (length * (length + 1)) / 2 - (length);
+    static long sumOfNums(long length) {
+        return (length * (length + 1) / 2) - length;
     }
 }
+/*
+
+These changes should make your code more concise and avoid unnecessary checks and floating-point arithmetic.
+Overall, your code is functional and provides a good solution to the problem.
+
+Class Solution {
+    public int countHomogenous(String s) {
+        int length = s.length();
+        long ans = length;
+        long mod = (long) Math.pow(10, 9) + 7;
+        int firstPointer = 0;
+        int secondPointer = 1;
+
+        while (secondPointer < length) {
+            if (s.charAt(firstPointer) == s.charAt(secondPointer)) {
+                secondPointer++;
+            } else {
+                if (secondPointer - firstPointer >= 2) {
+                    ans = (ans + sumOfNums(secondPointer - firstPointer)) % mod;
+                }
+                firstPointer = secondPointer;
+                secondPointer++;
+            }
+        }
+        ans = (ans + sumOfNums(secondPointer - firstPointer)) % mod;
+        return (int) ans;
+    }
+
+    static long sumOfNums(long length) {
+        return (length * (length + 1) / 2) - length;
+    }
+}
+
+ */
