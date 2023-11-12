@@ -5,7 +5,7 @@ Test Cases Passed:
 Time Limit Exceeded
 Your program took more time than expected.Expected Time Limit: 2.96sec
  */
-public class LongestSubArrayWithSumK {
+public class LongestSubArrayWithSumKBrute {
     public static void main(String[] args) {
         int[] arr = {-13, 0, 6, 15, 16, 2, 15, -12, 17, -16, 0, -3, 19, -3, 2, -9, -6};
         int k = 15;
