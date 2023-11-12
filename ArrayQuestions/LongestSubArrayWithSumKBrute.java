@@ -12,9 +12,7 @@ public class LongestSubArrayWithSumKBrute {
         System.out.println(longestSubArr(arr, k));
     }
     static int longestSubArr(int[] arr, int k) {
-        int longest = 0, sum = 0;
-        int left = 0, right = 0;
-
+        int longest = 0, sum;
         for (int i = 0; i < arr.length; i++) {
             sum = 0;
             for (int j = i; j < arr.length; j++) {
