@@ -1,8 +1,8 @@
 package ArrayQuestions;
-
+/*
+the code will work for -ve as well as +ve elements.
+ */
 import java.util.HashMap;
-
-import static ArrayQuestions.PrefixSumArray.prefixSum;
 
 public class LongestSubArrayWithSumKBetter {
     public static void main(String[] args) {
