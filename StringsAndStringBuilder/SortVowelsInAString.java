@@ -1,4 +1,4 @@
-package DailyLeetcodeTries;
+package StringsAndStringBuilder;
 /*
 Runtime
 21ms
@@ -8,6 +8,7 @@ Memory
 Beats 96.03%of users with Java
  */
 import java.util.ArrayList;
+
 public class SortVowelsInAString {
     public static void main(String[] args) {
         String s = "lEeeetcOOdeeeuU"; // ans = "lEOOUtceedeeeeu"
