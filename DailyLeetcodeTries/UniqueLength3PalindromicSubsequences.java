@@ -1,6 +1,6 @@
 package DailyLeetcodeTries;
 /*
-Solved this question without any hints or idea, just had to take chatGPT's help to initialize a 2d ArrayList.
+Solved this question without any hints or idea, just had to take ChatGPT's help to initialize a 2d ArrayList.
 Everything else is original and my own, feeling very nice.
  */
 import java.util.ArrayList;
@@ -37,10 +37,14 @@ public class UniqueLength3PalindromicSubsequences {
     static int uniquePalindrome(String s, int first, int last) {
         HashSet<Character> hashSet = new HashSet<>();
         int midChars = first + 1;
+
         while (last - first != 0 && midChars < last) {
             hashSet.add(s.charAt(midChars));
             midChars++;
         }
+        /*
+        you can also directly add the substring from start + 1 to end - 1;
+         */
         return hashSet.size();
     }
 }
