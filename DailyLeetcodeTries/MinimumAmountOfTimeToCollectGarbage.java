@@ -1,5 +1,6 @@
 package DailyLeetcodeTries;
-
+//everything OG
+//but iterating from the last could have been better.
 public class MinimumAmountOfTimeToCollectGarbage {
     public static void main(String[] args) {
         String[] garbage = {"MMM","PGM","GP"};
