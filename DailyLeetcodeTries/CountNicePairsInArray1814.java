@@ -10,6 +10,7 @@ I hope you got that. So like 13 and 35 is a pair because when you reverse 13 and
 increased by 18 and when you reverse 35 and make it 53, it is also increased by 18.
 
 Runtime 30 ms Beats 91.25% of users with Java
+O(n + log(num)). log(num) is the complexity of reversing every digit.
 Everything OG!
  */
 public class CountNicePairsInArray1814 {
