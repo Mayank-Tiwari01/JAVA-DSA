@@ -5,6 +5,8 @@ Feeling a little good passing all the test cases in one go.
 4 ms Beats 65.38% of users with Java.
 It will give better runtime on leetcode if you do not make a separate function (possible reason given below).
 TC: O(n) and SC: O(n).
+There is also an O(1) SC answer, where you just calculate the total sum and then, as you iterate in the array, you keep adding the numbers,
+then using that to calculate the required value.
  */
 import java.util.Arrays;
 
