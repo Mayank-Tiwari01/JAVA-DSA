@@ -2,7 +2,7 @@ package DailyLeetcodeTries;
 /*
 Got the logic after analyzing the test cases. Wrote the whole code by my own, wasn't very easy to come up, also did this during ETE.
 Feeling a little good passing all the test cases in one go.
-4 ms Beats 65.38% of users with Java.
+3 ms Beats 99.36% of users with Java.
 It will give better runtime on leetcode if you do not make a separate function (possible reason given below).
 TC: O(n) and SC: O(n).
 There is also an O(1) SC answer, where you just calculate the total sum and then, as you iterate in the array, you keep adding the numbers,
@@ -18,14 +18,12 @@ public class SumOfAbsoluteDifferencesInSortedArray {
     static int[] sumOfDiff(int[] nums) {
         int len = nums.length;
         int[] prefixSum = prefixSumArr(nums, len);
-        int[] sumOfDiff = new int[len];
-
         for (int i = 0; i < len; i++) {
             int x = (prefixSum[len] - prefixSum[i]) - (nums[i] * (len - i));
             int y = (nums[i] * i) - prefixSum[i];
-            sumOfDiff[i] = x + y;
+            nums[i] = x + y;
         }
-        return sumOfDiff;
+        return nums;
     }
     static int[] prefixSumArr(int[] nums, int len) {
         int[] sums = new int[len + 1];
