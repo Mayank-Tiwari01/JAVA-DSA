@@ -38,3 +38,33 @@ public class SumOfAbsoluteDifferencesInSortedArray {
         return sums;
     }
 }
+/*
+The performance difference between the two versions of the code might be attributed to several factors. Let's analyze the differences:
+
+Function Call Overhead:
+
+In the first version, there is a separate function (prefixSumArr) to calculate the prefix sum.
+In the second version, the prefix sum is calculated inline within the main function.
+Impact: Function calls typically introduce a small overhead. Inlining the prefix sum calculation in the second version might reduce this overhead.
+
+Memory Allocation:
+
+In the first version, a separate array (prefixSum) is created to store the prefix sums.
+In the second version, the prefix sums are stored directly in the prefixSum array without the need for a separate array.
+Impact: Memory allocation and array creation can have a minor impact on performance. The second version avoids the creation of a separate array, potentially reducing memory overhead.
+
+Code Size:
+
+The first version has a slightly larger code size due to the presence of a separate function.
+Impact: Larger code size might affect cache utilization, leading to minor performance differences.
+
+Compiler Optimization:
+
+Compiler optimizations can play a significant role. Different compilers and optimization settings may produce varying results.
+Impact: The compiler might optimize certain constructs differently, leading to performance variations.
+
+Data Dependency:
+
+The second version reduces data dependency by calculating the prefix sum in a single loop.
+Impact: Reduced data dependency can improve pipeline utilization, potentially leading to better performance.
+ */
