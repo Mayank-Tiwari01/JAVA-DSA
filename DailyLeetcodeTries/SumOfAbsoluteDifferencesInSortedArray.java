@@ -3,7 +3,7 @@ package DailyLeetcodeTries;
 Got the logic after analyzing the test cases. Wrote the whole code by my own, wasn't very easy to come up, also did this during ETE.
 Feeling a little good passing all the test cases in one go.
 4 ms Beats 65.38% of users with Java.
-It will give better runtime on leetcode if you do not make a separate function.
+It will give better runtime on leetcode if you do not make a separate function (possible reason given below).
 TC: O(n) and SC: O(n).
  */
 import java.util.Arrays;
