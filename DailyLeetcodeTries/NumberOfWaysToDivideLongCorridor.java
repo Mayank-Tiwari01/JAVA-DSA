@@ -7,6 +7,7 @@ import java.util.ArrayList;
  Got confused with this line "at most one divider can be installed" lol.
  Also, I got the logic pretty fast, but wasted most of my time in integer overflow issue.
  Using mod after every multiplication solved the overflow problem.
+ Everything OG ofc.
  */
 public class NumberOfWaysToDivideLongCorridor {
     public static void main(String[] args) {
