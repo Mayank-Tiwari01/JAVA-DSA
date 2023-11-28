@@ -27,6 +27,7 @@ public class NumberOfWaysToDivideLongCorridor {
         if (count % 2 != 0 || count == 0) return  0;
         if (count == 2) return 1;
         long ans = 1;
+        //The only place you can install a divider is between two pairs of seats.
         for (int i = 1; i < seatIndex.size() - 2; i+= 2) {
             ans *= seatIndex.get(i + 1) - seatIndex.get(i);
             ans %= mod;
