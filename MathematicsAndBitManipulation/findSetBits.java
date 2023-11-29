@@ -2,7 +2,7 @@ package MathematicsAndBitManipulation;
 
 public class findSetBits {
     public static void main(String[] args) {
-        int n = 256;
+        int n = 111111;
         System.out.println(Integer.toBinaryString(n));
         int counter = 0;
         while (n > 0) {
