@@ -11,14 +11,14 @@ public class CheckIfTwoStringArraysAreEquivalent {
         System.out.println(isSame(word1, word2));
     }
     static boolean isSame(String[] word1, String[] word2) {
-        String s = "";
-        String x = "";
-        for (int i = 0; i < word1.length; i++) {
-            s += word1[i];
+        StringBuilder s = new StringBuilder();
+        StringBuilder x = new StringBuilder();
+        for (String value : word1) {
+            s.append(value);
         }
-        for (int i = 0; i < word2.length; i++) {
-            x += word2[i];
+        for (String value : word2) {
+            x.append(value);
         }
-        return s.equals(x);
+        return s.toString().contentEquals(x);
     }
 }
