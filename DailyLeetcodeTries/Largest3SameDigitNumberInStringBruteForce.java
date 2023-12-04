@@ -8,8 +8,8 @@ public class Largest3SameDigitNumberInStringBruteForce {
     static String sameDigitSubstring(String nums) {
         int len = nums.length();
         int ans = -1;
-       for (int i = len - 1; i > 1; i--) {
-           if (nums.charAt(i) == nums.charAt(i - 1) && nums.charAt(i - 1) == nums.charAt(i - 2)) {
+       for (int i = 0; i < len - 1; i++) {
+           if (nums.charAt(i) == nums.charAt(i + 1) && nums.charAt(i + 1) == nums.charAt(i + 2)) {
                int j = nums.charAt(i) - '0';
 //               int j = Character.getNumericValue(nums.charAt(i)); (Alternate way)
                if (ans < j) {
