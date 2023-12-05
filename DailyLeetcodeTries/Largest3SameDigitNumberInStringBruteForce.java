@@ -12,9 +12,8 @@ public class Largest3SameDigitNumberInStringBruteForce {
            if (nums.charAt(i) == nums.charAt(i + 1) && nums.charAt(i + 1) == nums.charAt(i + 2)) {
                int j = nums.charAt(i) - '0';
 //               int j = Character.getNumericValue(nums.charAt(i)); (Alternate way)
-               if (ans < j) {
-                   ans = j;
-               }
+                ans = Math.max(j, ans);
+               i += 2;
            }
        }
        if (ans >= 0) {
