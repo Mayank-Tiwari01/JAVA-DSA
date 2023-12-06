@@ -3,6 +3,8 @@ package DailyLeetcodeTries;
 Beats 100 % of users with java, 0MS run time.
 Everything OG. Had to look up the formula only.
 Write the indentation carefully.
+The formula for calculating the sum of a continuous range is “(startNum + endNum) * numCount / 2
+The formula to find the sum of n terms in AP is Sn = n/2 (2a+(n−1)d)
  */
 public class CalculateMoneyInLeetcodeBank {
     public static void main(String[] args) {
