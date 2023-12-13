@@ -2,6 +2,9 @@ package DailyLeetcodeTries;
 /*
 A very Brute Force approach. Time complexity would be O(2n) == O(n). n being row x col. Space complexity 0(numOfCols).
 Runtime is 2ms. Beats 89.24% of users with java.
+Could have made two arrays, one which would store how many 1 are there in a row, and the second would store
+how many 1 are there in a col. And then you can iterate in the matrix again and check for every 1 if the subsequent row and col
+have exactly one '1'.
  */
 public class SpecialPositionsInBinaryMatrix {
     public static void main(String[] args) {
