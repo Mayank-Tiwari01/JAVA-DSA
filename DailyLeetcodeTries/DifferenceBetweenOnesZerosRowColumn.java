@@ -6,7 +6,9 @@ So, while transversing through the rows, subtract the number of 1's from the num
 Do the same while transversing through the cols.
 Now you just have to add these two things together. This would require to transverse the array 3 times.
 1: row wise, 2: col wise, 3: while making the difference array. So, the TC is O(3N) == O(N). N = m * n.
+7ms runtime. Beats 79.6% of users with java.
 ChatGPt modified the code a little bit and reduced the complexity from O(3N) to O(2N). Which is the same thing, but it is still better.
+6ms runtime. Beats 86.7% of users with java.
 See comments below. Also, the second comment is how I was approaching the question at first.
  */
 import java.util.Arrays;
