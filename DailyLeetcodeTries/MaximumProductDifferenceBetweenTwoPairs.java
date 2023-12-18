@@ -1,7 +1,7 @@
 package DailyLeetcodeTries;
 /*
 Too easy. Everything OG ofc. Run Time 2ms beats 97.5% of users with java. O(N) and O(1).
-A 3-line answer with O(NlogN) complexity is:
+A 3-line answer with O(NlogN) complexity is (7ms):
  Arrays.sort(nums);
         int length = nums.length;
         return (nums[length - 1] * nums[length - 2]) - (nums[0] * nums[1]);
