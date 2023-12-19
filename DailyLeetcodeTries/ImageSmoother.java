@@ -45,7 +45,7 @@ public class ImageSmoother {
 
         if (i < rows - 1)  neighbours[1] = i + 1;
 
-        else if (i >= rows - 1) neighbours[1] = i;
+        else if (i == rows - 1) neighbours[1] = i;
 
         //calculate j start and j end.
         if (j == 0) neighbours[2] = j;
@@ -54,7 +54,7 @@ public class ImageSmoother {
 
         if (j < cols - 1) neighbours[3] = j + 1;
 
-        else if (j >= cols - 1) neighbours[3] = j;
+        else if (j == cols - 1) neighbours[3] = j;
 
         return neighbours;
     }
