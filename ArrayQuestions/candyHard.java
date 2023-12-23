@@ -1,6 +1,6 @@
 package ArrayQuestions;
 /*
-approach and logic is 100 % mine, but I think I got the idea of transversing the array more than one from a sol?
+approach and logic are 100 % mine, but I think I got the idea of transversing the array more than one from a sol?
 anyway, sol is good and is pretty good.
 Did this with no knowledge of greedy algorithm, or dp.
 O(3n)
