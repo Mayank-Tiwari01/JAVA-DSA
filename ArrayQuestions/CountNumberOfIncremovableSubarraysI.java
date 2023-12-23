@@ -24,6 +24,8 @@ class CountNumberOfIncremovableSubarraysI {
         int[] temp = new int[nums.length - (end - start + 1)];
         int index = 0;
 
+        // we have to create a new array which has the elements except the subarray we are skipping
+        //we have to do this to check if the remaining array is increasing or not.
         for (int i = 0; i < nums.length; i++) {
             if (i < start || i > end) {
                 temp[index++] = nums[i];
