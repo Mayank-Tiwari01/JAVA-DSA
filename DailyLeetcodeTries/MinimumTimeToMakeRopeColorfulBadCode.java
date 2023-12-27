@@ -5,6 +5,12 @@ I just could not figure out how I get the sum of cost of all the same color ball
 And then the next problem was when the second pointer reaches the end, and it gives an array out of bound.
 11ms, beats 27.51%.
 I Need to focus on DSA again as this code is very bad ulti aari bhai.
+
+The approach is we have to remove every similar colored balloon except one, and that one should be the balloon with the
+highest cost because we do not want to remove it since we want minimum time to do this task.
+So we will keep a variable which will have the max cost, and then we will subtract it with the sum of the
+cost of all the similar balloons.
+This way we will know the least cost of removing every balloon except one.
  */
 public class MinimumTimeToMakeRopeColorfulBadCode {
     public static void main(String[] args) {
