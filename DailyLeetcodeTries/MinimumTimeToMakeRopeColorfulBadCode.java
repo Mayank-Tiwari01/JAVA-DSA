@@ -4,7 +4,7 @@ Came with the approach pretty quickly, but implementing it took an hour which is
 I just could not figure out how I get the sum of cost of all the same color balloons.
 And then the next problem was when the second pointer reaches the end, and it gives an array out of bound.
 11ms, beats 27.51%.
-I Need to focus on DSA again.
+I Need to focus on DSA again as this code is very bad ulti aari bhai.
  */
 public class MinimumTimeToMakeRopeColorfulBadCode {
     public static void main(String[] args) {
