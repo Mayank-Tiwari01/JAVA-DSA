@@ -9,14 +9,23 @@ public class RepeatedSubstringPatternProperWay {
         int len = s.length();
         for (int i = len / 2; i >= 0; i--) {
             if (len % i == 0) {
-                int subArrays = len / i;
-                StringBuilder subStringAdd = new StringBuilder();
+                int repetitions = len / i;
+                StringBuilder repeatedString = new StringBuilder();
                 String temp = s.substring(0, i);
-                while (subArrays > 0) {
-                    subStringAdd.append(temp);
-                    subArrays--;
+                while (repetitions > 0) {
+                    repeatedString.append(temp);
+                    repetitions--;
                 }
-                if (subStringAdd.toString().equals(s)) return true;
+                if (repeatedString.toString().equals(s)) return true;
+                /*
+                 if (len % i == 0) {
+                int repetitions = len / i;
+                String repeatedString = s.substring(0, i).repeat(repetitions);
+                if (repeatedString.equals(s)) {
+                    return true;
+                }
+            }
+                 */
             }
         }
         return false;
