@@ -4,6 +4,7 @@ import java.util.Arrays;
 /*
 I do not know why and how the BS is working here, why does this approach work is also not clear.
 I did the brute force all on my own, but it gave TLE. FML.
+understand the bs now, check the comment below. 2 jan 2024.
  */
 public class NumberOfFlowersInFullBloomUsingBS {
     public static void main(String[] args) {
@@ -51,8 +52,14 @@ public class NumberOfFlowersInFullBloomUsingBS {
             }
             else {
                 high = mid;
+                /*
+                wondering why not we did mid - 1? because:
+                that "mid" might be the ceiling. suppose we have elements like 1,2,3,4. we want to know how many flowers
+                died or grew before 3. So we look for the ceiling that is 4, right? why do we do that because the index of
+                4 (ceiling/ just one higher value from 3) is the total number of flowers that died or bloomed before or during 3
+                */
             }
         }
-        return low;
+        return low; // you can even return high. because at the end both pointers will be pointing to one index only.
     }
 }
