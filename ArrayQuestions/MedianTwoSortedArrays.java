@@ -3,7 +3,7 @@ package ArrayQuestions;
 Runtime
 2ms
 Beats 72.12%of users with Java
-try doing it with BS after some time.
+try doing it with BS after some time.(Good luck with that btw)
  */
 public class MedianTwoSortedArrays {
     public static void main(String[] args) {
