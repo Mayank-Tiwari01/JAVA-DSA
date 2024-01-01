@@ -3,7 +3,8 @@ package BS;
 public class Ceilling {
     public static void main(String args[]){
         int[] arr = {2, 5, 8, 11, 14, 17, 20};
-        int target = 19;
+        int target = 22;
+
 
         int ans = CeillingNum(arr,target);
         System.out.println(ans);
