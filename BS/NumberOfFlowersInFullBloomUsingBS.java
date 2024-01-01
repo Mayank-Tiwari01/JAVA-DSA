@@ -5,6 +5,8 @@ import java.util.Arrays;
 I do not know why and how the BS is working here, why does this approach work is also not clear.
 I did the brute force all on my own, but it gave TLE. FML.
 Understand the bs now, check the comment below. Two jan 2024.(see the comments, I understood all that by myself.)
+If a person comes at 4, so the flowers that he sees will be. Flowers that bloomed during and before four minus flowers that
+already died before 4. This is what the code does basically.
  */
 public class NumberOfFlowersInFullBloomUsingBS {
     public static void main(String[] args) {
