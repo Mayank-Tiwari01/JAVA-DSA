@@ -26,9 +26,12 @@ public class ConvertArrayInto2DArrayWithConditionsHash {
 
         for (int num : nums) {
             int freq = 0;
-            if (numsCount.containsKey(num)) freq = numsCount.get(num);
+            if (numsCount.containsKey(num)) freq = numsCount.get(num); //adding elements later is essential.
 
-            if (freq == arr2D.size()) arr2D.add(new ArrayList<Integer>());arr2D.get(freq).add(num);
+            if (freq == arr2D.size()) {
+                arr2D.add(new ArrayList<Integer>());
+            }
+            arr2D.get(freq).add(num);
             numsCount.put(num, numsCount.getOrDefault(num, 0) + 1);
         }
         return arr2D;
