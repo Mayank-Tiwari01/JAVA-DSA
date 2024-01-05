@@ -7,7 +7,7 @@ to do this.
 First thing to remember: updating the start pointer is the most important thing
 second: update the char's index as they keep coming and if the char is repeating, but it is behind the start index, then
 it will have no harm to our substring.
-Third: keep updating the INDEX.
+Third: keep updating the INDEX!!!.
 Fourth: You can also use an array of size 128 cause remember you are just updating the index. I don't get the logic though
 because I have used all my brain's juice.(this is what happens when you try to use a Sliding window, without learning it)
 Acceptance Rate is 34.3% (for a reason bro)
