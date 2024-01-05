@@ -10,6 +10,7 @@ it will have no harm to our substring.
 Third: keep updating the INDEX.
 Fourth: You can also use an array of size 128 cause remember you are just updating the index. I don't get the logic though
 because I have used all my brain's juice.(this is what happens when you try to use a Sliding window, without learning it)
+Acceptance Rate is 34.3% (for a reason bro)
  */
 class LongestSubstringWithoutRepeatingCharacters {
     public static void main(String[] args) {
