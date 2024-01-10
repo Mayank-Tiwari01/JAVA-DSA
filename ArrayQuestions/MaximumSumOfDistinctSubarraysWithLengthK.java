@@ -6,7 +6,8 @@ The only mistake that made me fail those 2 test cases out 92 is that I assumed t
 they'd be together, like 3,2,2,1,7. So I can just update my start pointer to the duplicate element found.
 But what if the test case is like 3,2,3,1. I think this is the mistake I did in that blood-sucking question
 LongestSubstringWithoutRepeatingCharacters. Please do better next time.
-Also, I know I should have used Prefix Sum (will try later).
+Also, I know I should have used Prefix Sum (will try later)
+(tried) and I do not think it is much better tbh, beats 79.60%.
  */
 public class MaximumSumOfDistinctSubarraysWithLengthK {
     public static void main(String[] args) {
@@ -16,8 +17,8 @@ public class MaximumSumOfDistinctSubarraysWithLengthK {
     }
     static long maxSubArrSum(int[] nums, int k) {
         HashMap <Integer, Integer> numIdx = new HashMap<>();
-        long maxSum = 0, len = nums.length;
-        int j = 0;
+        long maxSum = 0;
+        int j = 0, len = nums.length;
         long currSum = 0;
         for (int i = 0; i < len; i++) {
             if (!numIdx.containsKey(nums[i]) || numIdx.get(nums[i]) < j) {
