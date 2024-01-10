@@ -7,7 +7,7 @@ they'd be together, like 3,2,2,1,7. So I can just update my start pointer to the
 But what if the test case is like 3,2,3,1. I think this is the mistake I did in that blood-sucking question
 LongestSubstringWithoutRepeatingCharacters. Please do better next time.
 Also, I know I should have used Prefix Sum (will try later)
-(tried) and I do not think it is much better tbh, beats 79.60%.
+(tried) and I think it is much better tbh, beats 79.60%.
  */
 public class MaximumSumOfDistinctSubarraysWithLengthK {
     public static void main(String[] args) {
