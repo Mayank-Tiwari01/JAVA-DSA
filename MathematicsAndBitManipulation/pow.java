@@ -2,8 +2,8 @@ package MathematicsAndBitManipulation;
 
 public class pow {
     public static void main(String[] args) {
-        int n = -2;
-        int power = 11;
+        int n = 2;
+        int power = 3;
         System.out.println(pow(n, power));
     }
     static long pow (int n, int power) {
