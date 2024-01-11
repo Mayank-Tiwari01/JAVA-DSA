@@ -1,6 +1,7 @@
 package ArrayQuestions;
 import java.util.*;
 /*
+Everything OG OFC.
 I got the approach relatively quick. But I did not apply much brain while implementing it and thus, made a lot of foolish
 errors. Major mistakes were: updating window size in every iteration. Updating p if it is out of range, while I should
 only update p if it is behind wStart. And I should only update the window size if wEnd < p. A Pretty easy problem but
