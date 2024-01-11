@@ -4,9 +4,23 @@ public class root {
     public static void main(String[] args) {
         int n = 16;
         int p = 3;
-        System.out.println(findRoot(n,p));
+        int root = findRoot(n);
+        System.out.println(rootUptoP(root, p));
     }
-    static int findRoot(int n, int p) {
+    static float rootUptoP(int n, int p) {
+        float fAns = n;
+        float inc = 0.1F;
+
+        for (int i = 1; i <= p; i++) {
+            while(fAns * fAns <= n) {
+                fAns += inc;
+            }
+            fAns -= inc;
+            inc /= 10;
+        }
+        return fAns;
+    }
+    static int findRoot(int n) {
         int start = 1;
         int end = n;
         int ans = -1;
