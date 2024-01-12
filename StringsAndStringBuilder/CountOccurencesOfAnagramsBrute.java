@@ -1,5 +1,6 @@
 package StringsAndStringBuilder;
 /*
+https://www.geeksforgeeks.org/problems/count-occurences-of-anagrams5839/1
 Everything OG Ofc.
 Got the intuition fairly quickly, within like 10 minutes. What I was thinking at first was that I will maintain two
 arrays and then check for anagram, and then make the values of the second array 0. And then do it all over again for
@@ -14,7 +15,8 @@ Making freq of the char that we passed as 0, instead of reducing it by 1.
 Making all values zero in txt array after every window. Would not work if you were using a Sliding Window. Would work
 for n^2 code.
 
-Ps: leetcode has the same question, it just wants the index instead of count. (pasted below)
+Ps: leetcode has two questions similar to this question, it just wants the index instead of count and
+a boolean if it has any anagram or not. (Pasted below)
  */
 public class CountOccurencesOfAnagramsBrute {
     public static void main(String[] args) {
@@ -57,6 +59,7 @@ public class CountOccurencesOfAnagramsBrute {
     }
 }
 /*
+q 438
 class Solution {
     public List<Integer> findAnagrams(String txt, String pat) {
         int[] txtCount = new int[26];
@@ -84,6 +87,49 @@ class Solution {
             if (j == txtLen - (patLen - 1)) break;
         }
         return anagramIdx;
+    }
+
+     static boolean isAnagram(int[] patCount, int[] txtCount, int patLen, int txtLen) {
+        for (int i = 0; i < 26; i++) {
+            if (txtCount[i] != patCount[i]) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
+ */
+
+/*
+q 567
+class Solution {
+    public boolean checkInclusion(String pat, String txt) {
+        int[] txtCount = new int[26];
+        int[] patCount = new int[26];
+
+        ArrayList<Integer> anagramIdx = new ArrayList<>();
+
+        int txtLen = txt.length(), patLen = pat.length();
+        if (txtLen < patLen) return false;
+
+        for (int i = 0; i < patLen; i++) {
+            int idx = pat.charAt(i) - 'a';
+            patCount[idx]++;
+        }
+
+        int j = 0; // start idx
+        for (int i = 0; i < txtLen; i++) {
+            txtCount[txt.charAt(i) - 'a']++;
+            if (i - j + 1 == patLen) {
+                boolean isAnagram = isAnagram(patCount, txtCount, patLen, txtLen);
+                if (isAnagram) return true;
+                txtCount[txt.charAt(j) - 'a']--;
+                j++;
+            }
+            if (j == txtLen - (patLen - 1)) break;
+        }
+        return false;
     }
 
      static boolean isAnagram(int[] patCount, int[] txtCount, int patLen, int txtLen) {
