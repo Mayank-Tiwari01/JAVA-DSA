@@ -1,7 +1,7 @@
 package StringsAndStringBuilder;
 /*
 https://www.geeksforgeeks.org/problems/count-occurences-of-anagrams5839/1
-Everything OG Ofc.
+Everything OG Ofc.(Read everything you lil lazy boy)
 Got the intuition fairly quickly, within like 10 minutes. What I was thinking at first was that I will maintain two
 arrays and then check for anagram, and then make the values of the second array 0. And then do it all over again for
 the next window, but half-way I realized that sliding window does not work like that, the count of the chars will remain
@@ -17,6 +17,16 @@ for n^2 code.
 
 Ps: leetcode has two questions similar to this question, it just wants the index instead of count and
 a boolean if it has any anagram or not. (Pasted below)
+
+Another approach by using HashMap:
+First count the freq of chars in pat.
+Make a variable count = map.size() which stores unique elements.
+Move in the txt string and reduce the freq of matched chars in the map if any char's freq becomes zero
+we update count--. If after transversing in the whole window, the count becomes 0, then we do counter++.
+Why do we use count? So that we do not have to transverse in the map again to see if all the chars are 0 or not.
+Then when we move to the next window. The start pointer is no more in the window, right? So we increase the freq of
+the char that was present at the start pointer, and also we increase the count to 1, and we decrease the freq of char at end index.
+video for this approach : https://www.youtube.com/watch?v=MW4lJ8Y0xXk&list=PL_z_8CaSLPWeM8BDJmIYDaoQ5zuwyxnfj&index=5
  */
 public class CountOccurencesOfAnagramsBrute {
     public static void main(String[] args) {
