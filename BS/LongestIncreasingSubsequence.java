@@ -23,7 +23,7 @@ Your interpretation aligns well with the underlying logic of the algorithm. If y
  */
 public class LongestIncreasingSubsequence {
     public static void main(String[] args) {
-        int[] nums = {10,9,2,5,3,7,101,18};
+        int[] nums = {1,2,3,0,7,5,4,3,2,0,1,4};
         System.out.println(lengthOfLIS(nums));
     }
     static int lengthOfLIS(int[] nums) {
