@@ -3,6 +3,8 @@ package SortingQuestions;
 import java.util.*;
 /*
 Much optimal.
+1: Check if all chars are there
+2: check if the frequency of frequencies satisfies or not
  */
 public class DetermineIfTwoStringsAreClose {
     public static void main(String[] args) {
