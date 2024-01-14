@@ -4,22 +4,34 @@ import java.util.HashMap;
 /*
 EVERYTHING OG OFC!!!!
 Did this in one go that too in linear time and then checked to see my rank in placements, and they put me in the top 10%
-that is Dean's List. Feeling pretty happy.
+that is Dean's List.
+Feeling pretty happy.(Aditya verma said this is the highest difficulty that sliding window reaches,
+so doing this myself is nice, not great, but nice),
 So at first I wasn't getting the question, but Within 10-15 minutes, I got what it was asking.
 
 This follows the same pattern as many other sliding window questions follow, such as MinimumSizeSubarraySum.
 The logic is if you do not have enough chars, you go forward in the string to look for it, use Hash Map and the size of
 it will be the unique chars, any time a chars value becomes 0 you reduce 1 from unique chars, this way you know when
-you got all the chars. Once you got it, see if you can shrink it? But where will you shrink it from? From the start!
-Why? Cause going forward will give you more chars and that will increase the window duh. So decrease the window from
+you got all the chars.
+Once you got it, see if you can shrink it?
+But where will you shrink it from?
+From the start!
+Why?
+Cause going forward will give you more chars and that will increase the window duh.
+So decrease the window from
 the last and keep checking if the unique char is still zero or not, if while decreasing, you find a character that we need
 we increase the count/value/frequency, signifying that we passed one char that we needed, if by increasing the freq is
-less than or equal to 0 then no need to update unique chars. If the freq is in minus while decreasing the window, that means
-we have more than needed freq of that specific character, so we do not mind going past that. But if while decreasing,
-the count becomes 1, then you update the unique chars variable, and save this length. Then again, you have unique char as 1,
+less than or equal to 0 then no need to update unique chars.
+If the freq is in minus while decreasing the window, that means
+we have more than needed freq of that specific character, so we do not mind going past that.
+But if while decreasing,
+the count becomes 1, then you update the unique chars variable, and save this length.
+Then again, you have unique char as 1,
 so you will go ahead to search for it.
 
-It was my OG approach, but this video explains exactly this approach. So yeah, my thought was not original. Big deal?
+It was my OG approach, but this video explains exactly this approach.
+So yeah, my thought was not original.
+Big deal?
 
 https://www.youtube.com/watch?v=3Bp3OVD1EGc
  */
