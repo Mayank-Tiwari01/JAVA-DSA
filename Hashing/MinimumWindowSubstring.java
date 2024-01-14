@@ -1,6 +1,8 @@
 package Hashing;
 
 import java.util.HashMap;
+import java.util.Stack;
+
 /*
 EVERYTHING OG OFC!!!!
 Did this in one go that too in linear time and then checked to see my rank in placements, and they put me in the top 10%
