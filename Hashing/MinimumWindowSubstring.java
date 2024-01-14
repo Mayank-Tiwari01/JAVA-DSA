@@ -34,7 +34,7 @@ So yeah, my thought was not original.
 Big deal?
 
 https://www.youtube.com/watch?v=3Bp3OVD1EGc
-https://www.youtube.com/watch?v=iwv1llyN6mo&list=TLPQMTQwMTIwMjTNCmnlGCjdtw&index=2
+https://www.youtube.com/watch?v=iwv1llyN6mo&list=TLPQMTQwMTIwMjTNCmnlGCjdtw&index=2 (38:10)
  */
 public class MinimumWindowSubstring {
     public static void main(String[] args) {
