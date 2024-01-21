@@ -1,17 +1,22 @@
 package StackAndQueue;
 import java.util.*;
 /*
+Very similar to LargestRectangleInHistogram.
+In fact, I even copied and pasted 80% of the code.
 The idea is form subarrays where the number [i] will be the smallest and then calculate
-the sum. The formula is i - leftSmallest[i] to know the numbers which are on the right
-side of the subarray for right side it is rightSmallest - i. Multiply them with the number
-to know the sum of this subarray, do this for each subarray. Also look for duplicates and
+the sum.
+The formula is i - leftSmallest[i] to know the numbers which are on the right
+side of the subarray for right side it is rightSmallest - i.
+Multiply them with the number
+to know the sum of this subarray, do this for each subarray.
+Also look for duplicates and
 integer overflow.
 Watch this video IK you have forgotten the approach.
 https://www.youtube.com/watch?v=HRQB7-D2bi0&t=1056s
  */
 public class SumOfSubarrayMinimums {
     public static void main(String[] args) {
-        int[] arr = {11,81,94,43,3};
+        int[] arr = {8,1};
         System.out.println(sumSubarrayMins(arr));
     }
     static int sumSubarrayMins(int[] arr) {
