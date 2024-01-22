@@ -1,7 +1,9 @@
 package ArrayQuestions;
 
 import java.util.Arrays;
-
+/*
+math.abs is imp
+ */
 public class SetMismatch {
     public static void main(String[] args) {
         int[] nums = {1,2,3,4,5,6,7,7,9,10};
@@ -15,7 +17,7 @@ public class SetMismatch {
             if(nums[index] > 0){
                 nums[index] *= -1;
             }
-            else if(nums[index] < 0){
+            else{
                 setMismatch[0] = index + 1;
             }
         }
@@ -23,6 +25,7 @@ public class SetMismatch {
         for (int i = 0; i < nums.length; i++){
             if(nums[i] > 0){
                 setMismatch[1] = i + 1;
+                break;
             }
         }
         return setMismatch;
