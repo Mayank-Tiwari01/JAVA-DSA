@@ -2,8 +2,8 @@ package Recursion;
 
 public class palindromeUsingRecursion {
     public static void main(String[] args) {
-        String s = "    aya    ";
-        s.trim();
+        String s = "    aya                ";
+        s = s.trim();
         int len = s.length();
         System.out.println(isPalindrome(s, 0, len));
     }
