@@ -16,7 +16,7 @@ The space complexity is determined by the depth of the recursion, which is the l
 public class createAllSubSeqRecursion {
     static ArrayList<List<Integer>> allSubSeq = new ArrayList<>();
     public static void main(String[] args) {
-        int[] arr = {7,8,9,10};
+        int[] arr = {1,2,1,0,1};
         int len = arr.length;
 
         subSeq(arr, 0, len, new int[len]);
