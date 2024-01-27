@@ -34,11 +34,11 @@ public class createAllSubSeqRecursion {
             return;
         }
 
-        //include a specific element
+        //include a specific element.
         temp[idx] = 1;
         subSeq(arr, idx + 1, len, temp);
 
-        //exclude a specific element
+        //exclude a specific element.
         temp[idx] = 0;
         subSeq(arr, idx + 1, len, temp);
     }

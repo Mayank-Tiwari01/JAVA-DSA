@@ -3,7 +3,7 @@ package Recursion;
 public class BSWithRecursion {
     public static void main(String[] args) {
         int[] arr = {0,1,2,3,4,5,6,7,8,9,10,11,12};
-        int target = 100;
+        int target = 10;
         System.out.println(BS(arr, target, 0, arr.length - 1));
     }
     static int BS(int[] arr, int target, int start, int end) {
