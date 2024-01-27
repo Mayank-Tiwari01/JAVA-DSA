@@ -38,6 +38,7 @@ public class subSeqWithGivenSumOnlyOneAndCount {
                 //pass by reference fault or something.
                 return 1;
             }
+            if (sum > k) return 0; //if values are positive.
             return 0;
         }
 
