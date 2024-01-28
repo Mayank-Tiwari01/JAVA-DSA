@@ -1,5 +1,5 @@
 package MathematicsAndBitManipulation;
-
+//won't work on leetcode.
 public class palindromeRecursion {
     public static void main(String[] args) {
         int n = 0;
