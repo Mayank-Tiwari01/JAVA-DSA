@@ -30,6 +30,7 @@ public class bubbleSortUsingRecursion {
     static void noLoop(int[] arr, int n, int i) {
         if (n == 1 || n == 0) return;
 
+        //after each iteration you have to set the index to 0 so that it starts from the beginning again.
         if (i == n - 1) {
             noLoop(arr, n - 1, 0);
             return;
