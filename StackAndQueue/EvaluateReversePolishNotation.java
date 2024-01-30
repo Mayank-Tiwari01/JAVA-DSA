@@ -4,7 +4,7 @@ import java.util.*;
 Easy, push if it is a number, if it is an operation then pop two numbers out of the stack and then do that operation
 The number which is popped last is in the front while calculating, then push back the ans. The ans is what is stored in
 the stack top.
-Learn, Object.equals(), stringName.equals(), Long.parseLong(string).
+Learn, Object.equals(), stringName.equals(), Long.parseLong(string). Also switch and case.
  */
 public class EvaluateReversePolishNotation {
     public static void main(String[] args) {
