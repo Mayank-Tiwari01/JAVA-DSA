@@ -2,6 +2,7 @@ package BS;
 import java.util.*;
 /*
 https://youtu.be/dWmh3O8uX8A?si=9XECsK8FQaKDY6a8
+Won't give the correct subsequence, but would give the correct size, crazy crazy.
 what we do here (as far as I have understood) we like to keep the array increasing, but we want that every element that
 we add should be smaller. I'll explain one:
 if the array is 0,1,0,3,2,3.
@@ -48,9 +49,12 @@ public class LongestIncreasingSubsequence {
         while (start < end) {
             int mid = start + (end - start) / 2;
             int temp = list.get(mid);
-            if (temp == target) return mid;
-            if (temp < target ) start = mid + 1;
-            else end = mid;
+            if (temp == target)
+                return mid;
+            if (temp < target )
+                start = mid + 1;
+            else
+                end = mid;
         }
         return (start == len) ? -1 : start;
     }
