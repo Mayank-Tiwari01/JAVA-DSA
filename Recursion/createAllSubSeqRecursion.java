@@ -8,7 +8,9 @@ To understand it, pick a pen and paper and write the recursive tree, see how fun
 easy once you understand it. See the explanation in spiral classmate copy in the recursion section.
 Time Complexity (TC): O(2^n)
 
-The recursive function generates all possible subsets by making two recursive calls for each element in the array, representing the choice of including or excluding the element in the subset. As a result, the time complexity is exponential, specifically O(2^n), where n is the length of the array.
+The recursive function generates all possible subsets by making two recursive calls for each element in the array,
+representing the choice of including or excluding the element in the subset.
+As a result, the time complexity is exponential, specifically O(2^n), where n is the length of the array.
 Space Complexity (SC): O(n)
 
 The space complexity is determined by the depth of the recursion, which is the length of the array (n). The binary array temp has a space complexity of O(n), and the recursion stack also contributes to the space complexity. The depth of the recursion is at most n, leading to a space complexity of O(n).
