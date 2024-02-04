@@ -45,6 +45,6 @@ public class subSeqWithGivenSumOnlyOneAndCount {
 
         int no = count(nums, idx + 1, k, temp, sum);
 
-        return yes + no;
+        return yes + no; //recursion will automatically add all the values.
     }
 }
