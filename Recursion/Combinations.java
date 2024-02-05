@@ -1,5 +1,6 @@
 package Recursion;
 import java.util.*;
+//n! Not sure.
 public class Combinations {
     public static void main(String[] args) {
         int n = 4;
