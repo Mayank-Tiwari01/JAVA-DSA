@@ -2,7 +2,10 @@ package Recursion;
 import java.util.*;
 //finally recursion ke questions ban ne lage??
 // nah it is too good to be true.
-//laal laal hogya, antinational intellij, hindi thodi thodi aati.
+//laal laal hogya, anti-national intellij, hindi thodi thodi aati.
+//gfg has 4000+ test cases lol
+//1246 /4011
+//lc will accept.
 public class SubsetsII {
     public static void main(String[] args) {
         int[] arr = {4,1,2,3,4,5,1};
