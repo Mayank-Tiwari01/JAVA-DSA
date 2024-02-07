@@ -1,12 +1,7 @@
-package Hashing;
+package SortingQuestions;
 
 import java.util.*;
-//everything OG
-//5
-//ms
-//Beats
-//94.72%
-//of users with Java
+//import java.util.Comparator;
 
 public class SortCharactersByFrequency {
     public static void main(String[] args) {
@@ -37,7 +32,7 @@ public class SortCharactersByFrequency {
             int temp = row.get(1);
             while (temp > 0) {
                 ans.append(c);
-               temp--;
+                temp--;
             }
         }
         return ans.toString();
