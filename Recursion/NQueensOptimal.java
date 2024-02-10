@@ -3,7 +3,7 @@ package Recursion;
 import java.util.*;
 /*
 Uses hashing to optimize the checkPossible function.
-For left check use a simple array and put 1 at the row, you placed a queen
+For left check use a simple array and put 1 at the row, you place a queen
 For lower diagonal use a 2n + 1 array and place a 1 at row + col place
 For upper diagonal use a 2n + 1 array and place a 1 at n - 1 + col - row place.
 Read the code of NQueens too.
