@@ -21,7 +21,7 @@ public class SudokuSolver {
                             //becomes wrong after some other value is placed.
                         }
                     }
-                    return false;
+                    return false; //if you could not find anything to place, then return false.
                 }
             }
         }
