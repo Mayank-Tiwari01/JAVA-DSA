@@ -2,7 +2,7 @@ package Recursion;
 import java.util.*;
 public class PalindromePartitioning {
     public static void main(String[] args) {
-        String s = "aabb";
+        String s = "aabaccsddsb";
         System.out.println(partition(s));
     }
     static List<List<String>> partition(String s) {
