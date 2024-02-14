@@ -1,4 +1,7 @@
 watch Babar's stack video where he has solved some stack problems with the help of recursion
 https://www.youtube.com/watch?v=BmZnJehDzyU&list=PLDzeHZWIZsTrhXYYtx4z8-u8zA-DzuVsj&index=2
 
-learn pass by value and pass by reference in recursion and in java in general.
+Learn pass by value and pass by reference in recursion and in java in general.
+M coloring problem, the proper graph way, I have done a version of it myself see that too.
+https://www.youtube.com/watch?v=wuVwUK25Rfc&list=PLgUwDviBIf0rGlzIn_7rsaR2FQ5e6ZOL9&index=18
+
