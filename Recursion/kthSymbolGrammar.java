@@ -1,4 +1,4 @@
-package DailyLeetcodeTries;
+package Recursion;
 
 public class kthSymbolGrammar {
     public static void main(String[] args) {
@@ -10,6 +10,8 @@ public class kthSymbolGrammar {
         if (k == 1 && n == 1) {
             return 0;
         }
+
+        //n - 1 because n will have 2^n-1 element in it.
         int mid = (int) (Math.pow(2, n - 1) / 2);
         if (k <= mid) {
             return kThSymbol(n - 1, k);

@@ -8,8 +8,9 @@ public class CountInversions {
     }
     static long  mergeSort(long[] arr, int start, int end) {
         long count = 0;
-        if (start >= end)
+        if (start >= end) {
             return count;
+        }
 
         int mid = start + (end - start) / 2;
         count += mergeSort(arr, start, mid);
