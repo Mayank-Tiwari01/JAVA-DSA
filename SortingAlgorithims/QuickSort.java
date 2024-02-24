@@ -17,28 +17,29 @@ public class QuickSort {
         }
     }
     static int placePivot(int[] arr, int low, int high) {
-        int i = low;
-        int j = high;
+        int i = low;//will search for a larger element
+        int j = high;//will search for a smaller element.
 
         //int pivotIndex = low; //low is taken as the pivot index, however, you can choose the middle element to be
         //the pivot element to avoid the worst case n^2 scenario.
 
         while (i < j) {
+            //find larger
             while(arr[i] <= arr[low] && i < high)
                 i++;
+            //find smaller
             while (arr[j] > arr[low] && j > low)
                 j--;
             if (i < j)
                 swap(arr, i, j);
         }
-        swap(arr, low, j);
+        swap(arr, low, j);//pivot placed at it's correct pos.
         return j;
     }
     static int placePivotMiddleIndex(int[] arr, int low, int high) {
         // Choose the middle element as the pivot
         int pivotIndex = low + (high - low) / 2;
         swap(arr, pivotIndex, high);
-
         int pivot = arr[high];
         int i = low - 1;
         //"i" will keep track of all the elements that are shorter than the pivot element, we will make sure
@@ -46,7 +47,7 @@ public class QuickSort {
         for (int j = low; j < high; j++) {
             if (arr[j] <= pivot) {
                 i++;
-                swap(arr, i, j);
+                if (i != j) swap(arr, i, j);
             }
         }
         swap(arr, i + 1, high);

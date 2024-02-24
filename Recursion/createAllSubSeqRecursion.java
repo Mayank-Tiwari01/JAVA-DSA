@@ -16,6 +16,7 @@ Space Complexity (SC): O(n)
 The space complexity is determined by the depth of the recursion, which is the length of the array (n). The binary array temp has a space complexity of O(n), and the recursion stack also contributes to the space complexity. The depth of the recursion is at most n, leading to a space complexity of O(n).
  */
 public class createAllSubSeqRecursion {
+    //in real interviews, using global variables is discouraged maybe, so do not use it.
     static ArrayList<List<Integer>> allSubSeq = new ArrayList<>();
     public static void main(String[] args) {
         int[] arr = {1,2,2};
