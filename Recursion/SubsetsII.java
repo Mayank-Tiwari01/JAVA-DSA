@@ -1,8 +1,7 @@
 package Recursion;
 import java.util.*;
-//finally recursion ke questions ban ne lage??
-// nah it is too good to be true.
-//laal laal hogya, anti-national intellij, hindi thodi thodi aati.
+//finally, recursion ke questions ban né lage??
+// nah, it is too good to be true.
 //gfg has 4000+ test cases lol
 //1246 /4011
 //lc will accept.

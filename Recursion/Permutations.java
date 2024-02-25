@@ -16,7 +16,6 @@ public class Permutations {
             ans.add(makeList(nums));
             return;
         }
-
         for (int i = idx; i < nums.length; i++) {
             swap(nums, i, idx);
             findPermutations(nums, ans, idx + 1);

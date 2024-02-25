@@ -37,7 +37,7 @@ public class subSeqWithGivenSum {
         temp.remove(temp.size() - 1);
 
         helper(nums, idx + 1, k, temp, subSeq, sum); //using idx++ will not work because it will pass idx then do ++
-        //idx + 1.
+        //Idx + 1.
         /*
         It would increment idx after its current value is used in the method call, potentially leading to incorrect results in subsequent recursive calls.
         Therefore, it's good practice to use idx + 1 or ++idx to explicitly convey the intention of incrementing before the method call.

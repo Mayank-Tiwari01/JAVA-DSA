@@ -20,7 +20,7 @@ public class subSeqWithGivenSumOnlyOneAndCount {
 
         temp.add(nums[idx]);
         sum += nums[idx];
-        if (printOnlyOneSubSeq(nums, idx + 1, k, temp, sum)) return true;
+        if (printOnlyOneSubSeq(nums, idx + 1, k, temp, sum)) return true; //get out
 
         sum -= nums[idx];
         temp.remove(temp.size() - 1);

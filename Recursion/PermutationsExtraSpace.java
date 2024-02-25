@@ -2,7 +2,7 @@ package Recursion;
 import java.util.*;
 public class PermutationsExtraSpace {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4};
+        int[] arr = {1,2,3};
         System.out.println(permute(arr));
     }
     static List<List<Integer>> permute(int[] nums) {
@@ -16,7 +16,6 @@ public class PermutationsExtraSpace {
             ans.add(new ArrayList<>(ds));
             return;
         }
-
         for (int i = 0; i < nums.length; i++) {
             if (!pick[i]) {
                 pick[i] = true;

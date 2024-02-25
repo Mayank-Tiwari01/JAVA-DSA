@@ -4,8 +4,8 @@ import java.util.*;
 //https://www.youtube.com/watch?v=GBKI9VSKdGg&list=TLPQMDQwMjIwMjRmkAQ1wsGrUg&index=1
 public class CombinationSum {
     public static void main(String[] args) {
-        int[] arr = {2,3,6,7};
-        int target = 7;
+        int[] arr = {10,1,2,7,6,1,5};
+        int target = 8;
         System.out.println(combinations(arr, target));
     }
     static List<List<Integer>> combinations(int[] arr, int target) {

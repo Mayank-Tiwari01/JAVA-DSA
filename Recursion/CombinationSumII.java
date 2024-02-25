@@ -9,9 +9,9 @@ public class CombinationSumII {
         System.out.println(combinations(arr, target));
     }
     static List<List<Integer>> combinations(int[] arr, int target) {
-        Arrays.sort(arr); //This will avoid duplicates, but give TLE.
-
-        Set<List<Integer>> set = new HashSet<>();
+        Arrays.sort(arr);//this will make sure that, for example, if there are two instanced of 1,2 and 2,1, then they are
+        //both added in the set as 1,2 and 1,2 (sorted) so that hashset can identify it.
+        Set<List<Integer>> set = new HashSet<>(); //This will avoid duplicates, but give TLE.
         findCombinations(arr, target, 0, set, new ArrayList<Integer>());
         List<List<Integer>> ans = new ArrayList<>();
 

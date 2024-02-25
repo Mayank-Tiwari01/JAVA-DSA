@@ -7,7 +7,6 @@ public class SudokuSolver {
     static boolean helper(char[][] board) {
         for (int i = 0; i < 9; i++) {
             for (int j = 0; j < 9; j++) {
-
                 if (board[i][j] == '.') {
                     for (char c = '1'; c <= '9'; c++) {
                         if (isPossible(board, i, j, c)) {
