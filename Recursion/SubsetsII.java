@@ -7,7 +7,8 @@ import java.util.*;
 //lc will accept.
 public class SubsetsII {
     public static void main(String[] args) {
-        int[] arr = {4,1,2,3,4,5,1};
+        int[] arr = {4,1,1};
+        System.out.println(subsetsWithDup(arr));
     }
     static List<List<Integer>> subsetsWithDup(int[] nums) {
         Arrays.sort(nums);

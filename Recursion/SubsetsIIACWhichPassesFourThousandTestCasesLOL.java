@@ -5,7 +5,8 @@ import java.util.*;
 //4011 /4011 GFG
 public class SubsetsIIACWhichPassesFourThousandTestCasesLOL {
     public static void main(String[] args) {
-        int[] nums = {3,4,5,5,6,1,1,2,3,61,2,3};
+        int[] nums = {3,1,2,1};
+        System.out.println(subsetsWithDup(nums));
     }
     static List<List<Integer>> subsetsWithDup(int[] nums) {
         Arrays.sort(nums);

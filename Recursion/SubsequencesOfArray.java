@@ -8,14 +8,11 @@ public class SubsequencesOfArray {
 
     static void printAllSubsequences(int[] arr, int index, int[] currentSubset) {
         if (index == arr.length) {
-            // Print the current subset
-            System.out.print("Subsequence:");
             for (int i = 0; i < currentSubset.length; i++) {
                 if (currentSubset[i] == 1) {
                     System.out.print(arr[i] + " ");
                 }
             }
-            System.out.println(" ");
             return;
         }
 
