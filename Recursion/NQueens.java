@@ -1,5 +1,7 @@
 package Recursion;
 import java.util.*;
+//the use of row and col at the right place is crucial acc to me, because you do col + 1, means checking in the next col,
+//acc to this the isPossible function will change, so use them as they are.
 public class NQueens {
     public static void main(String[] args) {
         int n = 4;
