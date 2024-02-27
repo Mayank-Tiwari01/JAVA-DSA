@@ -4,6 +4,7 @@ public class WordSearch {
     public static void main(String[] args) {
         char[][] board = {{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}};
         String word = "ABCCED";
+        StringBuilder str = new StringBuilder(word);
         System.out.println(exist(board, word));
     }
     static boolean exist(char[][] board, String word) {
