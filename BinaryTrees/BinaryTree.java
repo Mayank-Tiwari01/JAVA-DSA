@@ -7,7 +7,8 @@ public class BinaryTree {
 
         public TreeNode(int data) {
             this.data = data;
-            this.left = this.right = null;
+            //no need for this as in java left and right are by default set as null.
+           //this.left = this.right = null;
         }
     }
 
@@ -17,34 +18,30 @@ public class BinaryTree {
         this.root = null;
     }
 
-    public void insert(int data) {
-        root = insertRecursive(root, data);
-    }
-
-    private TreeNode insertRecursive(TreeNode root, int data) {
-        if (root == null) {
-            return new TreeNode(data);
-        }
-
-        if (data < root.data) {
-            root.left = insertRecursive(root.left, data);
-        } else if (data > root.data) {
-            root.right = insertRecursive(root.right, data);
-        }
-
-        return root;
-    }
-
     public void printTree() {
         printTree(root);
     }
 
     private void printTree(TreeNode root) {
+        //pre order traversal.
         if (root != null) {
-            printTree(root.left);
             System.out.print(root.data + " ");
+            printTree(root.left);
             printTree(root.right);
         }
+    }
+
+    public static void main(String[] args) {
+        BinaryTree tree = new BinaryTree();
+        // Adding values to the tree
+        tree.root = new TreeNode(1);
+        tree.root.left = new TreeNode(2);
+        tree.root.right = new TreeNode(3);
+        tree.root.left.left = new TreeNode(4);
+        tree.root.left.right = new TreeNode(5);
+        tree.root.right.left = new TreeNode(6);
+
+        tree.printTree();
     }
 }
 
