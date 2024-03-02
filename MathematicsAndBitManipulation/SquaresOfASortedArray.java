@@ -16,13 +16,14 @@ public class SquaresOfASortedArray {
 
         while (start <= end) {
             if (Math.abs(nums[start]) >= Math.abs(nums[end])) {
-                ans[idx--] = nums[start] * nums[start];
+                ans[idx] = nums[start] * nums[start];
                 start++;
             }
             else {
-                ans[idx--] = nums[end] * nums[end];
+                ans[idx] = nums[end] * nums[end];
                 end--;
             }
+            idx--;
         }
         return ans;
     }
