@@ -42,6 +42,12 @@ public class BinaryTree {
         tree.root.right.left = new TreeNode(6);
 
         tree.printTree();
+
+        TreeNode temp = new TreeNode(12);
+        temp.left = new TreeNode(1);
+        temp.right = new TreeNode(2);
+        System.out.println(" ");
+        tree.printTree(temp);
     }
 }
 
