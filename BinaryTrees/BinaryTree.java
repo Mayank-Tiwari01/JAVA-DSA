@@ -7,8 +7,7 @@ public class BinaryTree {
 
         public TreeNode(int data) {
             this.data = data;
-            //no need for this as in java left and right are by default set as null.
-           //this.left = this.right = null;
+            this.left = this.right = null;
         }
     }
 
@@ -18,36 +17,78 @@ public class BinaryTree {
         this.root = null;
     }
 
-    public void printTree() {
-        printTree(root);
+    public void printTreePreOrder() {
+        printTreePreOrder(root);
     }
 
-    private void printTree(TreeNode root) {
-        //pre order traversal.
-        if (root != null) {
-            System.out.print(root.data + " ");
-            printTree(root.left);
-            printTree(root.right);
-        }
+    private void printTreePreOrder(TreeNode root) {
+        if (root == null)
+            return;
+        System.out.print(root.data + " ");
+        printTreePreOrder(root.left);
+        printTreePreOrder(root.right);
+    }
+    public void printTreeInOrder() {
+        printTreeInOrder(root);
+    }
+    private void printTreeInOrder(TreeNode root) {
+        if (root == null)
+            return;
+        printTreeInOrder(root.left);
+        System.out.print(root.data + " ");
+        printTreeInOrder(root.right);
+    }
+    public void printTreePostOrder() {
+        printTreePostOrder(root);
+    }
+    private void printTreePostOrder(TreeNode root) {
+        if (root == null) return;
+        printTreePostOrder(root.left);
+        printTreePostOrder(root.right);
+        System.out.print(root.data + " ");
+    }
+    static int idx = -1;
+
+    private TreeNode buildTreePreOrder(int[] nodes) {
+        idx++;
+        if (idx >= nodes.length || nodes[idx] == -1) return null;
+        TreeNode node = new TreeNode(nodes[idx]);
+        node.left = buildTreePreOrder(nodes);
+        node.right = buildTreePreOrder(nodes);
+        return node;
     }
 
-    public static void main(String[] args) {
-        BinaryTree tree = new BinaryTree();
-        // Adding values to the tree
-        tree.root = new TreeNode(1);
-        tree.root.left = new TreeNode(2);
-        tree.root.right = new TreeNode(3);
-        tree.root.left.left = new TreeNode(4);
-        tree.root.left.right = new TreeNode(5);
-        tree.root.right.left = new TreeNode(6);
-
-        tree.printTree();
-
-        TreeNode temp = new TreeNode(12);
-        temp.left = new TreeNode(1);
-        temp.right = new TreeNode(2);
-        System.out.println(" ");
-        tree.printTree(temp);
-    }
+//    public static void main(String[] args) {
+//        BinaryTree tree = new BinaryTree();
+//
+//        // Adding values to the original tree
+//        tree.root = new TreeNode(1);
+//        tree.root.left = new TreeNode(2);
+//        tree.root.right = new TreeNode(3);
+//        tree.root.left.left = new TreeNode(4);
+//        tree.root.left.right = new TreeNode(5);
+//        tree.root.right.left = new TreeNode(6);
+//
+//        // Using a pre-order array to build a tree
+//        int[] nums = {11, 21, 41, -1, -1, 51, -1, -1, 31, -1, 61, -1, -1};
+//        BinaryTree tree2 = new BinaryTree();
+//        tree2.root = tree2.buildTreePreOrder(nums);
+//
+//        // Print the original tree
+//        System.out.println("Original Tree (built using manual insertion) :");
+//        tree.printTreePreOrder();
+//        System.out.println();
+//
+//        // Print the constructed tree using pre-order traversal
+//        System.out.println("Constructed Tree(pre order):");
+//        tree2.printTreePreOrder();
+//        System.out.println();
+//
+//        System.out.println("Constructed Tree(In-order):");
+//        tree2.printTreeInOrder();
+//        System.out.println();
+//
+//        System.out.println("Constructed Tree(post-order):");
+//        tree2.printTreePostOrder();
+//    }
 }
-

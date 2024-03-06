@@ -8,6 +8,7 @@ public class LetterCombinationsOfAPhoneNumber {
     static List<String> letterCombinations(String digits) {
         List<String> result = new ArrayList<>();
         if (digits.isEmpty()) return result;
+        Queue<Integer> queue = new LinkedList<>();
 
         Map<Character, String> mapping = new HashMap<>();
         mapping.put('2', "abc");
