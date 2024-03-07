@@ -1,6 +1,7 @@
 package BinaryTrees;
 /*
 Bhai ye kya hora bhai, ye kya hora.
+BFS
 https://leetcode.com/problems/binary-tree-level-order-traversal/
  */
 import java.util.*;
