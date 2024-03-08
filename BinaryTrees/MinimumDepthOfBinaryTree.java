@@ -1,7 +1,14 @@
 package BinaryTrees;
 
 import java.util.*;
-//oops padhna pdega acche se.
+//OOPS padhna pdega acche se.
+/*
+The DFS approach will always traverse all the nodes of the binary tree,
+regardless of the tree structure.
+The BFS approach has the potential
+to terminate early if the minimum depth leaf node is encountered before traversing all the nodes,
+but in the worst case, it will still traverse all the nodes.
+ */
 public class MinimumDepthOfBinaryTree {
     class TreeNode {
         int val;
@@ -17,6 +24,7 @@ public class MinimumDepthOfBinaryTree {
             this.right = right;
         }
     }
+    //bfs
     static int minDepth(TreeNode root) {
         if (root == null) return 0;
         Queue<TreeNode> queue = new LinkedList<>();
@@ -36,6 +44,17 @@ public class MinimumDepthOfBinaryTree {
             minD++;
         }
         return minD;
+    }
+    //dfs
+    static int minDepthDFS(TreeNode root) {
+        if (root == null) return 0;
+
+        if (root.left == null && root.right == null) return 1;
+
+        int minL = (root.left != null) ? minDepthDFS(root.left) : Integer.MAX_VALUE;
+        int minR = (root.right != null) ? minDepthDFS(root.right): Integer.MAX_VALUE;
+
+        return 1 + Math.min(minL, minR);
     }
 
     public static void main(String[] args) {
