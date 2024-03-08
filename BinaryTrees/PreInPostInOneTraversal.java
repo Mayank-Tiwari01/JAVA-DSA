@@ -76,7 +76,6 @@ public class PreInPostInOneTraversal {
         // Call the allTransverses method and get the result
         List<List<Integer>> result = solution.allTransverses(root);
 
-        // Print the result
         System.out.println("Preorder: " + result.get(0));
         System.out.println("Inorder: " + result.get(1));
         System.out.println("Postorder: " + result.get(2));
