@@ -24,7 +24,7 @@ public class PreInPostInOneTraversal {
         this.right = right;
        }
     }
-    public List<List<Integer>> allTransversals(TreeNode root) {
+    public List<List<Integer>> allTransverses(TreeNode root) {
         List<List<Integer>> ans = new ArrayList<>();
         if (root == null) return ans;
         List<Integer> preOrder = new ArrayList<>();
@@ -59,6 +59,20 @@ public class PreInPostInOneTraversal {
         return ans;
     }
     public static void main(String[] args) {
-        //yeah, man IDK.
+        PreInPostInOneTraversal solution = new PreInPostInOneTraversal();
+
+        PreInPostInOneTraversal.TreeNode root = solution.new TreeNode(1);
+        root.left = solution.new TreeNode(2);
+        root.right = solution.new TreeNode(3);
+        root.right.left = solution.new TreeNode(4);
+        root.right.right = solution.new TreeNode(5);
+
+        // Call the allTransverses method and get the result
+        List<List<Integer>> result = solution.allTransverses(root);
+
+        // Print the result
+        System.out.println("Preorder: " + result.get(0));
+        System.out.println("Inorder: " + result.get(1));
+        System.out.println("Postorder: " + result.get(2));
     }
 }
