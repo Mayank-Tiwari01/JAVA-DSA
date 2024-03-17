@@ -47,6 +47,8 @@ public class ProductOfArrayExceptSelf {
         int zeroCount = 0;
         int pro = 1;
         int pro2 = 1;
+
+
         for (int i = 0; i < len; i++) {
             if (nums[i] != 0) {
                 pro *= nums[i];
