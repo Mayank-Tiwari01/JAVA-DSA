@@ -19,7 +19,8 @@ public class ContiguousArray {
             sum += (nums[i] == 0) ? -1 : 1;
             if (mp.containsKey(sum)) {
                 subArrayLength = Math.max(subArrayLength, i - mp.get(sum));
-            } else {
+            }
+            else {
                 mp.put(sum, i);
             }
         }
