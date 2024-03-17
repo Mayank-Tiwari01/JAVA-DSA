@@ -1,56 +1,28 @@
 package DailyLeetcodeTries;
-//yeah so....yeah
+import java.util.*;
+//Add when 1, subtract when 0. If you find a reoccurring sum that means the number of 0 and 1 is equal.
+//This question then becomes like lc question subarray sum equals k.
+//https://www.youtube.com/watch?v=AcSWGXBu-Xo&t=752s
 public class ContiguousArray {
     public static void main(String[] args) {
         int[] nums = {0,1,1,0,1,1,1,0};
         System.out.println(findMaxLength(nums));
     }
     static int findMaxLength(int[] nums) {
-        int len = nums.length;
-        int[] oneCount = new int[len + 1];
-        int count = 0;
-        for (int i = 1; i <= len; i++) {
-            count += nums[i - 1];
-            oneCount[i] = count;
-        }
-        int start = 1, end = len;
-
-        while (end - start + 1 >= 2) {
-            if ((end - start + 1) % 2 != 0) {
-                if (nums[start - 1] == 1 && nums[end - 1] == 1 || nums[start - 1] == 0 && nums[end - 1] == 0)
-                    start++;
-                else if (nums[start - 1] == 0 && nums[end - 1] == 1) {
-                    if (oneCount[end] - oneCount[start - 1] <= (end - start + 1) / 2)
-                        start ++;
-                    else
-                        end--;
-                }
-                else {
-                    if (oneCount[end] - oneCount[start - 1] <= (end - start + 1) / 2)
-                        end--;
-                    else
-                        start++;
-                }
-            }
-            if ((end - start + 1) % 2 == 0) {
-                if (oneCount[end] - oneCount[start - 1] == (end - start + 1) / 2)
-                    return end - start + 1;
-                else if (nums[start - 1] == 1 && nums[end - 1] == 1 || nums[start - 1] == 0 && nums[end - 1] == 0)
-                    start++;
-                else if (nums[start - 1] == 0 && nums[end - 1] == 1) {
-                    if (oneCount[end] - oneCount[start - 1] < (end - start + 1) / 2)
-                        start ++;
-                    else
-                        end--;
-                }
-                else {
-                    if (oneCount[end] - oneCount[start - 1] <= (end - start + 1) / 2)
-                        end--;
-                    else
-                        start++;
-                }
+        int n = nums.length;
+        Map<Integer, Integer> mp = new HashMap<>();
+        //to handle the case where the sum is 0.
+        mp.put(0, -1);
+        int sum = 0;
+        int subArrayLength = 0;
+        for (int i = 0; i < n; i++) {
+            sum += (nums[i] == 0) ? -1 : 1;
+            if (mp.containsKey(sum)) {
+                subArrayLength = Math.max(subArrayLength, i - mp.get(sum));
+            } else {
+                mp.put(sum, i);
             }
         }
-        return 0;
+        return subArrayLength;
     }
 }
