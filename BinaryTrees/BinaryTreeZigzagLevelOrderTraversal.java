@@ -28,7 +28,7 @@ public class BinaryTreeZigzagLevelOrderTraversal {
                 if (temp.right != null)
                     queue.add(temp.right);
                 if (level % 2 != 0)
-                    ds.add(0, temp.val);
+                    ds.add(0, temp.val); //adding from the end.
                 else
                     ds.add(temp.val);
             }

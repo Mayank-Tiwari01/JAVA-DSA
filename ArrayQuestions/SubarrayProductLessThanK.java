@@ -2,7 +2,9 @@ package ArrayQuestions;
 //if a subarrays product is less than k, then the individual would be less than k too.
 public class SubarrayProductLessThanK {
     public static void main(String[] args) {
-
+        int[] nums = {4,3,2,1};
+        int k = 20;
+        System.out.println(numSubarrayProductLessThanK(nums, k));
     }
     static int numSubarrayProductLessThanK(int[] nums, int k) {
         if (k <= 1) return 0;
