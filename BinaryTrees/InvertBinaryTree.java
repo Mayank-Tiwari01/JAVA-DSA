@@ -32,7 +32,8 @@ public class InvertBinaryTree {
             if (temp.right != null)
                 queue.add(temp.right);
             /*
-            assigning null to a reference variable in Java is a perfectly valid operation and does not cause a NullPointerException. The NullPointerException only occurs when you try to access a method or field of a null object reference.
+            Assigning null to a reference variable in Java is a perfectly valid operation and does not cause a NullPointerException.
+            The NullPointerException only occurs when you try to access a method or field of a null object reference.
             */
             TreeNode curr = temp.left;
             temp.left = temp.right;
