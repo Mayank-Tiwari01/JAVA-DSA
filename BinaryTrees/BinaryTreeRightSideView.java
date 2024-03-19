@@ -1,7 +1,7 @@
 package BinaryTrees;
 import java.util.*;
 public class BinaryTreeRightSideView {
-    class solution {
+    static class solution {
         //easiest bfs, also OG
         public List<Integer> rightSideView(TreeNode root) {
             List<Integer> list = new ArrayList<>();
