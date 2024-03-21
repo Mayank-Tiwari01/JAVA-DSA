@@ -18,12 +18,14 @@ public class VerticalTraversalOfBinaryTree {
 
         //I could have used a TreeMap instead, but Hashmap is more optimal and has less overhead.
         Map<Integer, ArrayList<Integer>> map = new HashMap<>();
+        //to keep track of the minimum and maximum vertical distances encountered.
         int min = 0, max = 0;
         Queue<Pair> queue = new LinkedList<>();
         queue.add(new Pair(root, 0));
 
         while (!queue.isEmpty()) {
             Pair temp = queue.poll();
+            //adding values in queue.
             if (temp.node.left != null) {
                 queue.offer(new Pair(temp.node.left, temp.dis - 1));
                 min = Math.min(min, temp.dis - 1);
@@ -33,6 +35,7 @@ public class VerticalTraversalOfBinaryTree {
                 max = Math.max(max, temp.dis + 1);
             }
 
+            //adding values in the map.
             map.putIfAbsent(temp.dis, new ArrayList<>());
             map.get(temp.dis).add(temp.node.val);
         }
