@@ -26,7 +26,6 @@ class solutionPreIterative {
         stack.add(root);
         while (!stack.isEmpty()) {
             int len = stack.size();
-
             for (int i = 0; i < len; i++) {
                 TreeNode peek = stack.pop();
                 if (peek.right != null)
