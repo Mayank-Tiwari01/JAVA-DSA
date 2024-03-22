@@ -21,8 +21,6 @@ public class BottomViewOfBinaryTree {
             if (temp.node.right != null) {
                 queue.offer(new TopViewOfBinaryTree.Pair(temp.node.right, temp.dis + 1));
             }
-
-            map.putIfAbsent(temp.dis, temp.node.val);
             map.put(temp.dis, temp.node.val); //override everytime, to get the last value only.
         }
         //iterate on the treeMap, and add all the values.
