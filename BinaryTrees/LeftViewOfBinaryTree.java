@@ -1,11 +1,12 @@
 package BinaryTrees;
 //gfg
+import java.util.*;
 public class LeftViewOfBinaryTree {
-    static ArrayList<Integer> leftView(Node root) {
+    static ArrayList<Integer> leftView(TreeNode root) {
         ArrayList<Integer> list = new ArrayList<>();
         if (root == null) return list;
 
-        Queue<Node> queue = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
 
         while (!queue.isEmpty()) {
@@ -13,12 +14,12 @@ public class LeftViewOfBinaryTree {
             int leftMost = -1;
             boolean found = false;
             for (int i = 0; i < len; i++) {
-                Node temp = queue.poll();
+                TreeNode temp = queue.poll();
                 if (temp.left != null) queue.add(temp.left);
                 if (temp.right != null) queue.add(temp.right);
 
                 if (!found) {
-                    leftMost = temp.data;
+                    leftMost = temp.val;
                     found = true;
                 }
 

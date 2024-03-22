@@ -1,6 +1,7 @@
 package BinaryTrees;
 //do watch the lc submission history of this one lol
 //https://leetcode.com/problems/binary-tree-right-side-view/submissions/1208525048/
+import java.util.*;
 public class RightViewOfBinaryTree {
     //bfs--best
     public List<Integer> rightSideView(TreeNode root) {
@@ -26,7 +27,7 @@ public class RightViewOfBinaryTree {
         return list;
     }
     //recurcsive by gpt
-    public List<Integer> rightSideView(TreeNode root) {
+    public List<Integer> rightSideView1(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         rightTraversal1(root, list, 0);
         return list;
@@ -39,7 +40,7 @@ public class RightViewOfBinaryTree {
             list.add(root.val);
         }
 
-        rightTraversal(root.right, list, level + 1);
-        rightTraversal(root.left, list, level + 1);
+        rightTraversal1(root.right, list, level + 1);
+        rightTraversal1(root.left, list, level + 1);
     }
 }
