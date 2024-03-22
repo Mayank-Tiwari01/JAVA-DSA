@@ -15,7 +15,7 @@ public class BinaryTreePaths {
 
         int length = str.length();
         if (length > 0) {
-            str.append("->");
+            str.append("->"); //meh
         }
         str.append(root.val);
 
