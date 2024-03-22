@@ -12,19 +12,12 @@ public class LeftViewOfBinaryTree {
         while (!queue.isEmpty()) {
             int len = queue.size();
             int leftMost = -1;
-            boolean found = false;
+            list.add(queue.peek().val);
             for (int i = 0; i < len; i++) {
                 TreeNode temp = queue.poll();
                 if (temp.left != null) queue.add(temp.left);
                 if (temp.right != null) queue.add(temp.right);
-
-                if (!found) {
-                    leftMost = temp.val;
-                    found = true;
-                }
-
             }
-            list.add(leftMost);
         }
         return list;
     }
