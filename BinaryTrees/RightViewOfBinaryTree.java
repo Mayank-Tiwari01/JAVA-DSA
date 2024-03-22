@@ -26,20 +26,21 @@ public class RightViewOfBinaryTree {
         }
         return list;
     }
-    //recurcsive by gpt
+    //recursive
     public List<Integer> rightSideView1(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         rightTraversal1(root, list, 0);
         return list;
     }
-
     private void rightTraversal1(TreeNode root, List<Integer> list, int level) {
         if (root == null) return;
 
+        //if the level is equal to list.size, then that would mean it is the first time we are at this level
+        //and since we are traversing in Root => Right => left fashion, the rightmost element would be the first element
+        //you get from that level.
         if (level == list.size()) {
             list.add(root.val);
         }
-
         rightTraversal1(root.right, list, level + 1);
         rightTraversal1(root.left, list, level + 1);
     }
