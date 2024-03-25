@@ -1,11 +1,50 @@
 package BinaryTrees;
 import java.util.*;
 /*
-OG approach but will give MLE.
+The main hint is left child index = 2 * n. Right = 2 * n + 1.
  */
 public class MaximumWidthOfBinaryTree {
-    static int index = 0;
+    //Optimal, use of long is essential because we are doing 2 * n everytime, so it will overflow.
+    static class Pair {
+        TreeNode node;
+        long idx;
+
+        Pair (TreeNode node, long idx) {
+            this.node = node;
+            this.idx = idx;
+        }
+    }
     public int widthOfBinaryTree(TreeNode root) {
+        if (root == null) return 0;
+        Queue<Pair> queue = new LinkedList<>();
+        queue.offer(new Pair(root, 0));
+        long maxWidth = 0;
+
+        while (!queue.isEmpty()) {
+            int len = queue.size();
+            long min = Long.MAX_VALUE;
+            long max = Long.MIN_VALUE;
+
+            for (int i = 0; i < len; i++) {
+                Pair temp = queue.poll();
+                TreeNode node = temp.node;
+                long idx = temp.idx;
+
+                if (node.left != null)
+                    queue.offer(new Pair(node.left, 2 * idx));
+                if (node.right != null)
+                    queue.offer(new Pair(node.right, 2 * idx + 1));
+
+                min = Math.min(min, idx);
+                max = Math.max(max, idx);
+            }
+            maxWidth = Math.max(maxWidth, max - min + 1);
+        }
+        return (int) maxWidth;
+    }
+    //OG approach but will give MLE.
+    static int index = 0;
+    public int widthOfBinaryTree1(TreeNode root) {
         if (root == null) return 0;
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);

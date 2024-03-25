@@ -1,7 +1,26 @@
 package BinaryTrees;
 import java.util.*;
 public class LCNOfBinaryTree {
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    //dfs + optimal
+    static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null) return null;
+        if (root == p)
+            return p;
+        if (root == q)
+            return q;
+
+        TreeNode left = lowestCommonAncestor(root.left, p, q);
+        TreeNode right = lowestCommonAncestor(root.right, p, q);
+
+        if (left == null)
+            return right;
+        else if (right == null)
+            return left;
+        else
+            return root;
+    }
+    //dfs + brute
+    public TreeNode lowestCommonAncestor1(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null) return null;
 
         List<TreeNode> pPath = new ArrayList<>();
