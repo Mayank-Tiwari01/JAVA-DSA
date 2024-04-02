@@ -8,31 +8,31 @@ package StringsAndStringBuilder;
 
 public class IsomorphicStrings {
     public static void main(String[] args) {
-        String s = "aabbcc";
-//        String t = "ddeeff$$$";// false
-        String t = "ddeeff"; //true
+        String s = "foo";
+        String t = "bar";
         System.out.println(isIsomorphic(s, t));
     }
     static boolean isIsomorphic(String s, String t) {
-        //
-        int[] mapS = new int[126];
-        int[] mapT = new int[126];
+        int len = s.length();
+        if (len != t.length())
+            return false;
 
-        for (int i = 0; i < s.length(); i++) {
+        int[] mapS = new int[256];
+        int[] mapT = new int[256];
+
+        for (int i = 0; i < len; i++) {
             char charS = s.charAt(i);
             char charT = t.charAt(i);
 
-            if (mapS[charS] != mapT[charT]) {
-                return false;
+            if (mapS[charS] == 0 && mapT[charT] == 0) {
+                mapS[charS] = charT;
+                mapT[charT] = charS;
             }
-
-            // Initialize the mappings if they are not set yet
-            if (mapS[charS] == 0) {
-                mapS[charS] = i + 1;
-                mapT[charT] = i + 1;
+            else {
+                if (mapS[charS] != charT || mapT[charT] != charS)
+                    return false;
             }
         }
-
         return true;
     }
 }
