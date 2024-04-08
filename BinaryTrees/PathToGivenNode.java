@@ -3,6 +3,7 @@ package BinaryTrees;
 import java.util.ArrayList;
 public class PathToGivenNode {
     public ArrayList<Integer> solve(TreeNode A, int B) {
+        StringBuilder str = new StringBuilder();
         ArrayList<Integer> list = new ArrayList<>();
         if (A == null) return list;
         helper(A, B, list);
