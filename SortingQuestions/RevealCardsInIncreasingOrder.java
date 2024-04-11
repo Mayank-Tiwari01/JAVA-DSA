@@ -7,7 +7,6 @@ also can use a queue to do this stimulation, that way we won't need the placed b
  */
 public class RevealCardsInIncreasingOrder {
     public static void main(String[] args) {
-
     }
     static int[] deckRevealedIncreasing(int[] deck) {
         Arrays.sort(deck);
