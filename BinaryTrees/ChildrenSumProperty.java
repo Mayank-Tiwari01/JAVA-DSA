@@ -15,8 +15,6 @@ public class ChildrenSumProperty {
             if (traverseAndCheck(root.left) == 0 || traverseAndCheck(root.right) == 0) return 0;
             return 1;
         }
-
-
         static long dfs(TreeNode root, long sum) {
             if (root == null) return sum;
             if (root.left == null && root.right == null)
