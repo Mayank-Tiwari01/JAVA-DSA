@@ -35,7 +35,7 @@ public class WordSearch {
         if (board[row][col] == '$'|| board[row][col] != word.charAt(idx))
             return false;
 
-        //Use this to write the 4 recursive calls more cleanly. Down, left, right and up.
+        //Use this to write the four recursive calls more cleanly. Down, left, right and up.
         int[][] movements = {{1,0},{0,-1},{0,1},{-1,0}};
 
         char temp = board[row][col];
