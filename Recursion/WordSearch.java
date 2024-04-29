@@ -1,4 +1,4 @@
-package Recursion;
+package  Recursion;
 //https://www.youtube.com/watch?v=whyax_vB8xY&list=TLPQMjcwMjIwMjTEEyPdzCobIA&index=1
 public class WordSearch {
     public static void main(String[] args) {
