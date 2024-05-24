@@ -4,6 +4,7 @@ import java.util.HashMap;
 Everything Og, just took little help from chatGpt and mik.
 Did it directly on leetcode. Classic Backtracking problem with some easy other functionalities.
 Using a 26-size array is much more optimal, see leetcode solution with a note**.
+
  */
 public class MaximumScoreWordsFormedByLetters {
     public static void main(String[] args) {
