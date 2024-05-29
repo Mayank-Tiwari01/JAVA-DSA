@@ -1,6 +1,7 @@
 package RecursionAndBacktracking;
 import java.util.*;
 public class WordBreakII {
+
     static  List<String> wordBreak(String s, List<String> wordDict) {
         HashSet<String> set = new HashSet<>(wordDict);
         List<String> ans = new ArrayList<>();
@@ -24,6 +25,7 @@ public class WordBreakII {
                 str.setLength(len); // Backtrack to previous state
             }
         }
+
     }
 }
 
