@@ -1,5 +1,3 @@
-
-```markdown
 # DSA Solutions in Java
 
 Welcome to my Data Structures and Algorithms (DSA) solutions repository. This repository contains my answers to various DSA problems, implemented in Java. The primary purpose of this repository is to maintain a record of all the questions I have solved so far.
@@ -8,53 +6,6 @@ Welcome to my Data Structures and Algorithms (DSA) solutions repository. This re
 
 In this repository, you will find my solutions to various DSA problems from different platforms like LeetCode, HackerRank, CodeSignal, and more. Each solution is written in Java and is intended to help me track my progress and improvement in solving algorithmic challenges.
 
-## Repository Structure
-
-The repository is organized into various folders, each representing a different category of DSA problems. Below is the structure of the repository:
-
-```
-├── ArrayQuestions
-│   └── <Java files>
-├── ArrayQuestions2D
-│   └── <Java files>
-├── BS
-│   └── <Java files>
-├── BasicJavaPrograms
-│   └── <Java files>
-├── BinarySearch2D
-│   └── <Java files>
-├── BinaryTrees
-│   └── <Java files>
-├── CSESIntroductoryProblems
-│   └── <Java files>
-├── Conditionals and loops
-│   └── <Java files>
-├── DailyLeetcodeTries
-│   └── <Java files>
-├── First Java Program - I
-│   └── <Java files>
-├── Functions
-│   └── <Java files>
-├── Hashing
-│   └── <Java files>
-├── MathematicsAndBitManipulation
-│   └── <Java files>
-├── OOPS
-│   └── <Java files>
-├── RecursionAndBacktracking
-│   └── <Java files>
-├── SortingAlgorithims
-│   └── <Java files>
-├── SortingQuestions
-│   └── <Java files>
-├── StackAndQueue
-│   └── <Java files>
-├── StringsAndStringBuilder
-│   └── <Java files>
-├── out/production/Learn.java
-│   └── <Java files>
-└── Learn.java.iml
-```
 
 ### Description of Folders
 
@@ -93,4 +44,5 @@ This repository is mainly for my personal use and tracking, but if you find any 
 If you have any questions or suggestions, feel free to reach out to me via email at [mayank.tiwari0106@gmail.com](mailto:mayank.tiwari0106@gmail.com).
 
 Happy Coding!
-```
+
+
