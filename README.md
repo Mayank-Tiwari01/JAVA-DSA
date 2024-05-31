@@ -4,7 +4,7 @@ Welcome to my Data Structures and Algorithms (DSA) solutions repository. This re
 
 ## About
 
-In this repository, you will find my solutions to various DSA problems from different platforms like LeetCode, HackerRank, CodeSignal, and more. Each solution is written in Java and is intended to help me track my progress and improvement in solving algorithmic challenges.
+In this repository, you will find my solutions to various DSA problems from different platforms like LeetCode, HackerRank, GFG, CSES and more. Each solution is written in Java and is intended to help me track my progress and improvement in solving algorithmic challenges.
 
 
 ### Description of Folders
@@ -33,7 +33,7 @@ In this repository, you will find my solutions to various DSA problems from diff
 
 ## How to Use
 
-Feel free to browse through the folders and look at the solutions. Each folder contains multiple Java files, each representing a solution to a specific problem. The commit messages may not be descriptive as they are primarily for record-keeping purposes.
+Feel free to browse through the folders and look at the solutions. Each folder contains multiple Java files, each representing a solution to a specific problem. The commit messages may not be descriptive as they are primarily for record-keeping purposes. 
 
 ## Contributing
 
