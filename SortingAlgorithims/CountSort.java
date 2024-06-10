@@ -14,8 +14,8 @@ public class CountSort {
 
         int[] sortedArr = new int[heights.length];
         /*
-            Iterate from end of the input array and because
-            traversing input array from end preserves the order of equal elements,
+            Iterate from the end of the input array, and because
+            a traversing input array from the end preserves the order of equal elements,
             which eventually makes this sorting algorithm stable.
         */
 
