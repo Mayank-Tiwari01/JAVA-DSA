@@ -23,5 +23,18 @@ public class LowerBound {
             }
         }
         return ans;
+
+        /*
+        while (start < end) {
+            int mid = same as above
+
+            if (arr[mid] >= k)
+                end = mid;
+            else
+                start = mid + 1;
+        }
+
+        return start;
+         */
     }
 }
