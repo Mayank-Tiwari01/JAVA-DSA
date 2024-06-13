@@ -23,8 +23,8 @@ public class MinimizedMaximumOfProductsDistributedToAnyStore {
         return ans;
     }
     static boolean areStoresFilled(int n, int[] quantities, int mid) {
-        for (int i = 0; i < quantities.length; i++) {
-            n -= (int) Math.ceil((double) quantities[i] / mid);
+        for (int quantity : quantities) {
+            n -= (int) Math.ceil((double) quantity / mid);
         }
         return n >= 0;
     }
