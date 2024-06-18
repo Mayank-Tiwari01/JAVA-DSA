@@ -1,5 +1,6 @@
 package SortingQuestions;
 //optimal for the constraints, also an OG solution.
+//try with binary search and sorting too
 public class MostProfitAssigningWork {
     static int maxProfitAssignment(int[] difficulty, int[] profit, int[] worker) {
         int maxWorkerDiff = 0;
