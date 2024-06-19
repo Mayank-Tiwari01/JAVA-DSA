@@ -7,52 +7,43 @@ public class MinimumNumberOfDaysToMakeBouquets {
         int m = 1;
         System.out.println(minDays(bloomDay, k, m));
     }
-    static int findMin( int[] bloomDay){
-        int min = Integer.MAX_VALUE;
-        for(int num : bloomDay){
-            if(min > num){
-                min = num;
-            }
-        }
-        return min;
-    }
-    static int findMax( int[] bloomDay){
-        int max = Integer.MIN_VALUE;
-        for(int num : bloomDay){
-            if(max < num){
-                max = num;
-            }
-        }
-        return max;
-    }
-    static int minDays(int[] bloomDay,int k, int m){
-        int counter = 0;
-        int numberOfBouquet = 0;
-        int min = findMin(bloomDay);
-        int max = findMax(bloomDay);
-        while(min <= max){
-            for( int i = 0; i < bloomDay.length; i++){
-                if(bloomDay[i] - min == 0 || bloomDay[i] - min < 0){
-                    counter++;
-                }
-                else{
-                    counter = 0;
-                }
-                if(counter == k){
-                    numberOfBouquet++;
-                    counter = 0;
-                }
-            }
-            if(numberOfBouquet == m || numberOfBouquet > m){
-                return min;
-            }
-            else{
-                numberOfBouquet = 0;
-                counter = 0;
-            }
-            min++;
-        }
+    static int minDays(int[] bloomDay, int m, int k) {
+        int n = bloomDay.length;
+        if (m * k > n) return -1;
 
-        return -1;
+        int maxDays = -1;
+        for (int i : bloomDay) maxDays = Math.max(maxDays, i);
+
+        int start = 1, end = maxDays;
+        int ans = -1;
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            if (isPossible(bloomDay, mid, m, k)) {
+                ans = mid;
+                end = mid - 1;
+            } else {
+                start = mid + 1;
+            }
+        }
+        return ans;
+    }
+
+    static boolean isPossible(int[] bloomDay, int mid, int m, int k) {
+        int adjacentCount = 0;
+        int bouquetCount = 0;
+        for (int i : bloomDay) {
+            if (bouquetCount == m)
+                break;
+            if (i <= mid)
+                adjacentCount++;
+            else
+                adjacentCount = 0;
+
+            if (adjacentCount == k) {
+                bouquetCount++;
+                adjacentCount = 0;
+            }
+        }
+        return bouquetCount >= m;
     }
 }
