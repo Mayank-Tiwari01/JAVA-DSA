@@ -20,7 +20,7 @@ public class LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit {
             minHeap.offer(nums[end]);
             maxHeap.offer(nums[end]);
 
-            while (maxHeap.peek() - minHeap.peek() > limit) {
+            while (!minHeap.isEmpty() && !maxHeap.isEmpty() && (maxHeap.peek() - minHeap.peek() > limit)) {
                 minHeap.remove(nums[start]);
                 maxHeap.remove(nums[start]);
                 start++;
