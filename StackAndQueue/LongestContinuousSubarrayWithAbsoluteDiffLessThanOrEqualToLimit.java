@@ -11,20 +11,18 @@ public class LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit {
         }
     }
     static int longestSubarrayBrute(int[] nums, int limit) {
-        PriorityQueue<Pair> minHeap = new PriorityQueue<>(Comparator.comparingInt((Pair p) -> p.val));
-        PriorityQueue<Pair> maxHeap = new PriorityQueue<>(Comparator.comparingInt((Pair p) -> p.val).reversed());
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
         int longestLen = 0;
         int start = 0;
 
         for (int end = 0; end < nums.length; end++) {
-            minHeap.offer(new Pair(nums[end], end));
-            maxHeap.offer(new Pair(nums[end], end));
+            minHeap.offer(nums[end]);
+            maxHeap.offer(nums[end]);
 
-            while (maxHeap.peek().val - minHeap.peek().val > limit) {
-                if (maxHeap.peek().idx == start)
-                    maxHeap.poll();
-                if (minHeap.peek().idx == start)
-                    minHeap.poll();
+            while (maxHeap.peek() - minHeap.peek() > limit) {
+                minHeap.remove(nums[start]);
+                maxHeap.remove(nums[start]);
                 start++;
             }
 
