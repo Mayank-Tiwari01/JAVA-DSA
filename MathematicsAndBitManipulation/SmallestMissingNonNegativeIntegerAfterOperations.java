@@ -1,5 +1,6 @@
 package MathematicsAndBitManipulation;
 import java.util.*;
+//https://www.youtube.com/watch?v=JGul4eki2es
 public class SmallestMissingNonNegativeIntegerAfterOperations {
     static int findSmallestInteger(int[] nums, int value) {
         HashMap<Integer, Integer> map = new HashMap<>();
